@@ -239,13 +239,13 @@ const ExploreOurStrategy = () => {
                         <div className="type-div">
                             <Image height="394" width="580" src={Type} loading="lazy" alt="type"/>
 
-                                <Typewriter
-                                    options={{
-                                        strings: ['Your Keyword'],
-                                        autoStart: true,
-                                        loop: true,
-                                    }}
-                                />
+                            <Typewriter
+                                options={{
+                                    strings: ['Your Keyword'],
+                                    autoStart: true,
+                                    loop: true,
+                                }}
+                            />
                         </div>
 
                     </div>
@@ -255,9 +255,8 @@ const ExploreOurStrategy = () => {
                 className="prices-explor-strategy col-11 pt-sm-32 pt-20 px-sm-43 px-4 pb-sm-50 pb-0 m-auto rounded-4 mb-sm-18 mb-8 basic-container">
                 <div className="d-flex flex-column align-items-center text-center pb-sm-22  pb-8">
                     <h2 className="explore-our-strategy-heading col-11 mb-4 h3">Link Building Case Studies</h2>
-                    <p className="col-md-8 col-11 text-sm fw-400 link-building-p">Be as successful as our clients. With
-                        GoPeak's
-                        backlinks, you will search for your keyword and find it at the top of Google SERP.</p>
+                    <p className="col-md-8 col-11 text-sm fw-400 link-building-p">{`Be as successful as our clients. With
+                        GoPeak's backlinks, you will search for your keyword and find it at the top of Google SERP.`}</p>
                     <div className="star-div">
                         {/*<StarLogo/>*/}
                         {/*<div>*/}
@@ -289,8 +288,8 @@ const ExploreOurStrategy = () => {
                                     </div>
                                     <span># referral program</span>
                                 </div>
-                                <p>With 30 high-quality monthly backlinks, the website has only improved visibility and
-                                    reached Google's first page in five months!</p>
+                                <p>{`With 30 high-quality monthly backlinks, the website has only improved visibility and
+                                    reached Google's first page in five months!`}</p>
                             </div>
                         </div>
                     </div>
@@ -307,8 +306,8 @@ const ExploreOurStrategy = () => {
                                     </div>
                                     <span># time tracking</span>
                                 </div>
-                                <p>The website has improved visibility with 25 high-quality monthly backlinks and
-                                    reached Google's first page in 8 months!</p>
+                                <p>{`The website has improved visibility with 25 high-quality monthly backlinks and
+                                    reached Google's first page in 8 months!`}</p>
                             </div>
                         </div>
                     </div>
@@ -326,9 +325,9 @@ const ExploreOurStrategy = () => {
                     >
                         <div className="notable-div">
                             <h4>Organic Traffic Increase</h4>
-                            <p>By receiving authoritative backlinks, Your website can reach the top of Google's search
+                            <p>{`By receiving authoritative backlinks, Your website can reach the top of Google's search
                                 results page. Did you know that the top-ranking result on a search engine results page
-                                (SERP) generally receives approximately 31.7% of the total organic traffic?</p>
+                                (SERP) generally receives approximately 31.7% of the total organic traffic?`}</p>
 
                             <Link href="/booking"><Contact/>Talk to an Expert</Link>
                         </div>
@@ -361,9 +360,9 @@ const ExploreOurStrategy = () => {
                     >
                         <div className="notable-div">
                             <h4>Domain Rating Increase</h4>
-                            <p>We obtain authority backlinks from reputable sources, enriching the link profile and
+                            <p>{`We obtain authority backlinks from reputable sources, enriching the link profile and
                                 boosting content visibility. Our link-building strategies allow us to mention our
-                                client's websites in authority sources.</p>
+                                client's websites in authority sources.`}</p>
 
                             <Link href="/booking"><Contact/>Talk to an Expert</Link>
                         </div>
