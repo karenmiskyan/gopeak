@@ -1,0 +1,73 @@
+{
+  "email": "support@gopeak.io",
+  "layout": {
+    "header": {
+      "how_it_works": "How it Works",
+      "pricing": "Pricing",
+      "about_us": "About Us",
+      "blog": "Blog"
+    },
+    "footer": {
+      "under_logo_text": "Boost your SEO with high-quality link building services from GoPeak.",
+      "link_columns": [
+        {
+          "name": "Links",
+          "items": [
+            {
+              "name": "Pricing",
+              "href": "/pricing"
+            },
+            {
+              "name": "How It Works",
+              "href": "/how-we-work"
+            }
+          ]
+        },
+        {
+          "name": "Resources",
+          "items": [
+            {
+              "name": "Blog",
+              "href": "/blog"
+            },
+            {
+              "name": "About US",
+              "href": "/about"
+            }
+          ]
+        },
+        {
+          "name": "Contacts",
+          "items": [
+            {
+              "name": "Contact Us",
+              "href": "/contact"
+            },
+            {
+              "name": "Book a call",
+              "href": "/booking"
+            }
+          ]
+        }
+      ],
+      "mini_columns": [
+        {
+          "name": "Terms & Conditions",
+          "href": "/terms-conditions"
+        },
+        {
+          "name": "Privacy Policy",
+          "href": "/privacy-policy"
+        }
+      ],
+      "contacts_column": {
+        "name": "Contacts",
+        "phone_number": "+374 93 846 504"
+      },
+      "copyright": "Copyright © {{year}} All Right Reserved."
+    }
+  },
+  "btn": {
+    "get_started": "Book a Demo"
+  }
+}

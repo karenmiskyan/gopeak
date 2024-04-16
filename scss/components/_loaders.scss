@@ -1,0 +1,87 @@
+.loader {
+  width: 56px;
+  height: 56px;
+  border-radius: 56px;
+  position: relative;
+  animation: rotateSpinner1 0.8s steps(12, end) infinite;
+  transform: scale(0.2);
+
+  .prong {
+    position: absolute;
+    height: 50%;
+    width: 6px;
+    left: calc(50% - 3px);
+    transform-origin: bottom;
+
+    .inner {
+      background: $gray-600;
+      border-radius: 12px;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      height: 50%;
+    }
+
+    @for $i from 1 through 12 {
+      &:nth-of-type(#{$i}) {
+        opacity: $i * 0.08;
+        transform: rotate($i * 30deg);
+      }
+    }
+  }
+
+  // Sizes
+  &-xs {
+    width: 22px;
+    height: 22px;
+
+    .prong {
+      width: 2px;
+      left: calc(50% - 1px);
+    }
+  }
+
+  &-sm {
+    width: 26px;
+    height: 26px;
+
+    .prong {
+      width: 2px;
+      left: calc(50% - 1px);
+    }
+  }
+
+  &-md {
+    width: 32px;
+    height: 32px;
+
+    .prong {
+      width: 2px;
+      left: calc(50% - 1px);
+    }
+  }
+
+  // Types
+  &-white {
+    .prong .inner {
+      background-color: $white;
+    }
+  }
+}
+
+@keyframes rotateSpinner1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.MuiSkeleton-root {
+  background-color: $skeleton-bg !important;
+
+  &::after {
+    background: $skeleton-animation-bg !important;
+  }
+}

@@ -1,0 +1,406 @@
+// Old
+.dropdown-menu {
+  display: block;
+  @include transition(max-height $transition-fast);
+  max-height: 0;
+  height: auto;
+  overflow: auto;
+  padding: 0;
+  border: none;
+  margin-top: $spacer * 5;
+
+  // States
+  &.show {
+    max-height: 300px;
+  }
+
+  // Behaviors
+  &-up {
+    margin-top: 0;
+    margin-bottom: $spacer * 5;
+    top: unset;
+    bottom: 100%;
+  }
+
+  .drop-header {
+    @include no-select;
+  }
+
+  .dropdown-item {
+    @extend .text-ellipsis;
+
+    &:not(.dropdown-item-danger) {
+      &.active, &:active {
+        background-color: $gray-300;
+        color: initial
+      }
+    }
+
+    // Types
+    &-danger {
+      color: $danger;
+
+      &:hover, &.active, &:active {
+        color: $danger;
+        background-color: transparentize($danger, .9);
+      }
+    }
+  }
+}
+
+// New
+.dropdown-container {
+  width: 100%;
+  height: 40px;
+
+  .dropdown {
+    position: relative;
+    width: 100%;
+    background-color: $white;
+    @extend .rounded-2;
+
+    .drop-toggle {
+      height: 40px;
+      padding: 8px 16px;
+      font-size: $h9-fz;
+      line-height: $h9-lh;
+      font-weight: $h9-fw;
+      @extend .d-flex;
+      @extend .align-items-center;
+      @extend .justify-content-between;
+      @include no-select;
+
+      >span {
+        padding-right: $spacer * 4;
+        @extend .text-ellipsis;
+        @include calc(max-width, '100% - 20px');
+      }
+
+      svg {
+        width: 16px;
+        height: 16px;
+        @include transition($transition-fast);
+
+        path {
+          fill: $gray-500;
+          @include transition($transition-fast);
+        }
+      }
+
+      &:hover svg path {
+        fill: $gray-600;
+      }
+    }
+
+    .drop-content {
+      overflow: auto;
+      padding: 0 16px;
+      position: relative;
+      z-index: 2;
+      background-color: $white;
+      @include transition(max-height $transition-fast, padding $transition-fast);
+      @include no-scroll-bar;
+      border-bottom-left-radius: $radius * 2;
+      border-bottom-right-radius: $radius * 2;
+      max-height: 0px;
+
+      &:before {
+        content: '';
+        display: block;
+        height: 2px;
+        background-color: $gray-400;
+        @include transition($transition-fast);
+        position: absolute;
+        top: 0;
+        left: 16px;
+        right: 16px;
+      }
+    }
+
+    &-bordered {
+      border: 2px solid $gray-500;
+
+      .drop-content {
+        border-top: none;
+        width: calc(100% + 4px);
+        left: -2px;
+      }
+
+      &.active {
+        border-color: $primary;
+
+        .drop-content {
+          border: 2px solid $primary;
+        }
+      }
+    }
+
+    .drop-item {
+      display: block;
+      height: 40px;
+      padding: 10px 8px;
+      color: $gray-700;
+      text-decoration: none;
+      cursor: pointer;
+      @extend .text-sm;
+      @extend .rounded-2;
+      @extend .text-ellipsis;
+      @extend .fw-medium;
+      @include no-select;
+
+      &:not(.active):hover {
+        background-color: $gray-300;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 2px;
+      }
+
+      &.active {
+        font-weight: 700;
+        background-color: $gray-300;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+        margin-right: $spacer * 4;
+        margin-top: -4px;
+      }
+    }
+
+    &.active {
+      z-index: 1;
+
+      .drop-toggle {
+        svg {
+          @include rotateX(180);
+
+          path {
+            fill: $gray-600;
+          }
+        }
+      }
+
+      .drop-content {
+        padding: 12px 16px;
+        max-height: 300px;
+      }
+    }
+
+    &-up {
+      .drop-content {
+        flex-direction: column-reverse;
+        bottom: 28px;
+        position: absolute;
+        padding: 2px 14px;
+        border-top-left-radius: $radius * 2;
+        border-top-right-radius: $radius * 2;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: 2px -4px 15px rgb(171 189 207 / 25%);
+
+        &::before {
+          bottom: 0;
+          top: initial;
+        }
+      }
+
+      .drop-toggle {
+        svg {
+          @include rotateX(180);
+        }
+      }
+
+      &.dropdown-bordered {
+        .drop-content {
+          z-index: -1;
+          border-bottom: none;
+        }
+      }
+
+      &.active {
+        border-bottom-left-radius: $radius * 2;
+        border-bottom-right-radius: $radius * 2;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        .drop-toggle {
+          svg {
+            @include rotateX(0);
+          }
+        }
+      }
+    }
+  }
+
+  // Sizes
+  &-lg {
+    height: 52px;
+
+    .dropdown {
+      .drop-toggle {
+        height: 52px;
+        font-size: $h8-fz;
+        line-height: $h8-lh;
+        font-weight: $h8-fw;
+        padding: 10px 16px;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &-up {
+        .drop-content {
+          bottom: 50px;
+        }
+
+        &.active {
+          &.dropdown-bordered {
+            .drop-content {
+              margin-bottom: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.user-dropdown {
+  z-index: 11;
+  position: relative;
+  max-width: max-content;
+
+  .drop-toggle {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: $white;
+    background-color: $gray-700;
+    font-size: $text-md-fz;
+    line-height: $text-md-lh;
+    font-weight: 700;
+    cursor: pointer;
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .justify-content-center;
+    @include no-select;
+
+    svg {
+      width: 16px;
+      height: 16px;
+
+      path {
+        fill: $white;
+      }
+    }
+  }
+
+  .drop-content {
+    max-height: 0;
+    width: 290px;
+    background-color: $white;
+    overflow: auto;
+    padding: 0 10px;
+    position: relative;
+    z-index: 3;
+    background-color: $white;
+    position: absolute;
+    right: 0;
+    @include calc(top, '100% + 11px');
+    @extend .shadow-1;
+    @extend .rounded-2;
+    @include transition($transition-fast);
+    @include no-scroll-bar;
+  }
+
+  .drop-item {
+    display: block;
+    height: 40px;
+    padding: 10px 8px;
+    color: $gray-700;
+    text-decoration: none;
+    cursor: pointer;
+    @extend .text-sm;
+    @extend .rounded-2;
+    @extend .text-ellipsis;
+    @include no-select;
+    @include transition($transition-fast);
+
+    &:not(.active):hover {
+      background-color: $gray-300;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+
+    &.active {
+      font-weight: 700;
+      background-color: $gray-300;
+    }
+
+    &.item-danger {
+      color: $danger;
+
+      &:hover {
+        background-color: transparentize($danger, .95);
+      }
+    }
+  }
+
+  &.active {
+    .drop-content {
+      max-height: 400px;
+      padding: 10px 10px;
+    }
+  }
+
+  .lang-toggle {
+    padding: 10px 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: $text-sm-fz;
+    line-height: $text-sm-lh;
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .justify-content-between;
+    @include no-select;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      @include transition($transition-fast);
+
+      path {
+        fill: $gray-500;
+      }
+    }
+  }
+
+  .lang-list {
+    padding: 0 10px;
+    max-height: 0;
+    overflow: auto;
+    @include no-scroll-bar;
+    @include transition($transition-fast);
+  }
+
+  .lang-dropdown.active {
+    .lang-toggle svg {
+      @include rotateX(180);
+
+      path {
+        fill: $gray-600
+      }
+    }
+
+    .lang-list {
+      max-height: 150px;
+    }
+  }
+}

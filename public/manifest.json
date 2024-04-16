@@ -1,0 +1,32 @@
+{
+  "name": "GoPeak link building service for customers",
+  "short_name": "GoPeak",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "description": "Link building service",
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "orientation": "portrait",
+  "related_applications": [],
+  "prefer_related_applications": false
+}

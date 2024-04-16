@@ -1,0 +1,26 @@
+@mixin text-overflow($overflow-type) {
+  text-overflow: $overflow-type;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin ellipsis() {
+  @include text-overflow(ellipsis);
+}
+
+@mixin clip() {
+  @include text-overflow(clip);
+}
+
+@mixin text-types($fz, $ls, $lh) {
+  font-size: $fz;
+  letter-spacing: $ls;
+  line-height: $lh;
+}
+
+@mixin heading-types($fz, $lh, $ls, $fw) {
+  font-size: $fz;
+  line-height: $lh;
+  letter-spacing: $ls;
+  font-weight: $fw;
+}

@@ -1,0 +1,227 @@
+.bg {
+  &-white {
+    background-color: $white;
+  }
+  &-red {
+    background-color: $red;
+  }
+  &-green {
+    background-color: $green;
+  }
+
+  &-gray-300 {
+    background-color: $gray-300;
+  }
+  &-gray-500-40 {
+    background-color: rgba($color: $gray-500, $alpha: 0.4);
+  }
+  &-gray-rgb-80 {
+    background-color: rgba(193, 198, 244, 0.8);
+  }
+
+  &-midnight {
+    background-color: $midnight;
+  }
+  &-midnight-100 {
+    background-color: $midnight-100;
+  }
+  &-midnight-200 {
+    background-color: $midnight-200;
+  }
+  &-midnight-300 {
+    background-color: $midnight-300;
+  }
+  &-midnight-400 {
+    background-color: $midnight-400;
+  }
+
+  &-orange {
+    background-color: $orange;
+  }
+  &-orange-100 {
+    background-color: $orange-100;
+  }
+  &-orange-200 {
+    background-color: $orange-200;
+  }
+  &-orange-300 {
+    background-color: $orange-300;
+  }
+  &-orange-350 {
+    background-color: $orange-350;
+  }
+  &-orange-400 {
+    background-color: $orange-400;
+  }
+
+  &-purple {
+    background-color: $purple;
+  }
+  &-purple-100 {
+    background-color: $purple-100;
+  }
+  &-purple-200 {
+    background-color: $purple-200;
+  }
+  &-purple-300 {
+    background-color:   $purple-300;
+  }
+  &-purple-350-07 {
+    background-color: rgba($color: $purple-300, $alpha: 0.07);
+  }
+  &-purple-400 {
+    background-color: $purple-400;
+  }
+
+  &-green-light-80 {
+    background-color: rgba($color: $green-light, $alpha: 0.8);
+  }
+
+  &-violet {
+    background-color: #F7F7FF;
+  }
+}
+
+.fill {
+  &-white path {
+    fill: $white;
+  }
+  &-success path {
+    fill: $success;
+  }
+  &-danger path {
+    fill: $danger;
+  }
+  &-warning path {
+    fill: $warning;
+  }
+  &-primary path {
+    fill: $primary;
+  }
+  &-gray-100 path {
+    fill: $gray-100;
+  }
+  &-gray-200 path {
+    fill: $gray-200;
+  }
+  &-gray-300 path {
+    fill: $gray-300;
+  }
+  &-gray-400 path {
+    fill: $gray-400;
+  }
+  &-gray-450 path {
+    fill: $gray-450;
+  }
+  &-gray-470 path {
+    fill: $gray-470;
+  }
+  &-gray-500 path {
+    fill: $gray-500;
+  }
+  &-gray-600 path {
+    fill: $gray-600;
+  }
+  &-gray-700 path {
+    fill: $gray-700;
+  }
+  &-orange path {
+    fill: $orange;
+  }
+  &-orange-100 path {
+    fill: $orange-100;
+  }
+  &-orange-200 path {
+    fill: $orange-200;
+  }
+  &-orange-300 path {
+    fill: $orange-300;
+  }
+  &-orange-400 path {
+    fill: $orange-400;
+  }
+  &-orange-500 path {
+    fill: $orange-500;
+  }
+  &-orange-600 path {
+    fill: $orange-600;
+  }
+  &-orange-700 path {
+    fill: $orange-700;
+  }
+  &-purple path {
+    fill: $purple;
+  }
+}
+
+.stroke {
+  &-white path {
+    stroke: $white;
+  }
+  &-success path {
+    stroke: $success;
+  }
+  &-danger path {
+    stroke: $danger;
+  }
+  &-warning path {
+    stroke: $warning;
+  }
+  &-primary path {
+    stroke: $primary;
+  }
+  &-gray-100 path {
+    stroke: $gray-100;
+  }
+  &-gray-200 path {
+    stroke: $gray-200;
+  }
+  &-gray-300 path {
+    stroke: $gray-300;
+  }
+  &-gray-400 path {
+    stroke: $gray-400;
+  }
+  &-gray-450 path {
+    stroke: $gray-450;
+  }
+  &-gray-470 path {
+    stroke: $gray-470;
+  }
+  &-gray-500 path {
+    stroke: $gray-500;
+  }
+  &-gray-600 path {
+    stroke: $gray-600;
+  }
+  &-gray-700 path {
+    stroke: $gray-700;
+  }
+  &-orange path {
+    stroke: $orange;
+  }
+  &-orange-100 path {
+    stroke: $orange-100;
+  }
+  &-orange-200 path {
+    stroke: $orange-200;
+  }
+  &-orange-300 path {
+    stroke: $orange-300;
+  }
+  &-orange-400 path {
+    stroke: $orange-400;
+  }
+  &-orange-500 path {
+    stroke: $orange-500;
+  }
+  &-orange-600 path {
+    stroke: $orange-600;
+  }
+  &-orange-700 path {
+    stroke: $orange-700;
+  }
+  &-purple path {
+    stroke: $purple;
+  }
+}

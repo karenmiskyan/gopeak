@@ -1,0 +1,221 @@
+{
+  "title": "Terms and Conditions",
+  "meta_desc": "Users of our website acknowledge and accept these terms and conditions, which apply to the transactions related to our products and services.",
+  "meta_title": "Terms and Conditions of gopeak.io",
+  "main_content": {
+    "intro_paragraphs": [
+      "These terms and conditions govern your use of the GoPeak.io website and any related agreements or legal relationships with the Owner. By accessing or using the Website, you agree to be bound by these Terms in a legally binding way. If you do not agree with any of these Terms, you must not use the Website.",
+      {
+        "isItalic": true,
+        "info": "Please read these Terms carefully before using the Website."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Account Registration",
+        "href": "account-registration",
+        "isH5": true,
+        "paragraphs": [
+          "You may need to register for an account to use certain features of the Website. By registering for an account, you agree to provide accurate, current, and complete information about yourself as prompted by the registration process and maintain and update your information to keep it current and complete. You are solely responsible for maintaining the confidentiality of your account and password and restricting access to your computer. You accept responsibility for all activities under your account or password and agree to notify the Owner immediately of any unauthorized use of your account, password, or any other security breach."
+        ]
+      },
+      {
+        "title": "Account Termination",
+        "href": "account-termination",
+        "isH5": true,
+        "paragraphs": [
+          "The Owner reserves the right to terminate or suspend your account at any time without notice or liability if you breach any provision of these Terms or engage in any conduct that the Owner, in its sole discretion, believes is in violation of any applicable law or regulation."
+        ]
+      },
+      {
+        "title": "Account Suspension and Deletion",
+        "href": "account-suspension-and-deletion",
+        "isH5": false,
+        "paragraphs": [
+          "The Owner reserves the right to suspend or delete your account at any time without notice or liability if your account remains inactive for an extended period of time."
+        ]
+      },
+      {
+        "title": "Content on this Website",
+        "href": "content-on-this-website",
+        "isH5": false,
+        "paragraphs": [
+          "All content on the Website, including but not limited to text, graphics, logos, images, videos, and software, is the property of the Owner or its licensors and is protected by copyright, trademark, and other intellectual property laws. You may not copy, modify, distribute, display, transmit, or create derivative works of any content on the Website without the prior written permission of the Owner."
+        ]
+      },
+      {
+        "title": "Rights Regarding Content on this Website - All Rights Reserved",
+        "href": "rights-regarding-content-on-this-website-all-rights-reserved",
+        "isH5": true,
+        "paragraphs": [
+          "The Owner or its licensors reserve all rights regarding content on this Website, including but not limited to text, graphics, logos, images, videos, and software. You may not use any content on the Website for any purpose without the prior written permission of the Owner."
+        ]
+      },
+      {
+        "title": "Access to External Resources",
+        "href": "access-to-external-resources",
+        "isH5": true,
+        "paragraphs": [
+          "The Website may contain links to third-party websites or resources. You acknowledge and agree that the Owner is not responsible for the availability of any such external sites or resources and does not endorse any advertising, products, or other materials on or available from such sites or resources."
+        ]
+      },
+      {
+        "title": "Acceptable Use",
+        "href": "acceptable-use",
+        "isH5": true,
+        "paragraphs": [
+          "You agree to use the Website only for lawful purposes and in a way that does not infringe the rights of, restrict or inhibit anyone else's use and enjoyment of the Website. You agree not to use the Website in any way that:",
+          [
+            "Is unlawful, harmful, threatening, abusive, harassing, defamatory, vulgar, obscene, libelous, invasive of another's privacy, hateful, or racially, ethnically, or otherwise objectionable;",
+            "Infringes any patent, trademark, trade secret, copyright, or other proprietary rights of any party;",
+            "Contains viruses or any other computer code, files, or programs that are designed or intended to disrupt, damage, or limit the functioning of any software, hardware, or telecommunications equipment or to damage or obtain unauthorized access to any data or other information of any third party;",
+            "Uses any robot, spider, crawler, scraper, or other automated means or interface not provided by us to access the Website or to extract data;",
+            "Sends spam or other unsolicited communications;",
+            "Harasses or interferes with another user's use and enjoyment of the Website."
+          ]
+        ]
+      },
+      {
+        "title": "Terms and Conditions of Sale",
+        "href": "terms-and-conditions-of-sale",
+        "isH5": true,
+        "paragraphs": [
+          "The following terms apply to any products or services purchased through the Website:",
+          [
+            {
+              "title": "Paid Products",
+              "content": "Certain products and services are available through the Website may be offered for a fee. By purchasing these products or services, you agree to pay the specified fee for the product or service and any applicable taxes."
+            },
+            {
+              "title": "Product Description",
+              "content": "The Owner makes every effort to ensure that product descriptions and specifications are accurate and complete. However, the Owner does not warrant that the descriptions or specifications of any product or service are error-free, complete, or current."
+            },
+            {
+              "title": "Purchasing Process",
+              "content": "To purchase a product or service through the Website, you must follow the ordering procedures specified on the Website. All orders are subject to acceptance by the Owner."
+            },
+            {
+              "title": "Order Submission",
+              "content": "By submitting an order through the Website, you represent and warrant that you are authorized to purchase using the payment method you provide."
+            },
+            {
+              "title": "Prices",
+              "content": "All prices are subject to change without notice. The Owner reserves the right to correct any errors or inaccuracies in pricing or product descriptions, even after an order has been submitted."
+            },
+            {
+              "title": "Retention of Usage Rights",
+              "content": "The Owner retains all usage rights to any products or services purchased through the Website, including but not limited to intellectual property rights."
+            },
+            {
+              "title": "Authorization for Future PayPal Payment",
+              "content": "By making a purchase through the Website, you authorize the Owner to charge the payment method you provide for any future payments related to the purchase."
+            },
+            {
+              "title": "Performance of Services",
+              "content": "The Owner will make every effort to perform any services purchased through the Website promptly and professionally. However, the Owner does not warrant the services being error-free, complete, or current."
+            },
+            {
+              "title": "User Rights",
+              "content": "Users may cancel any order for a product or service within 14 days of the purchase date."
+            },
+            {
+              "title": "Right of Withdrawal",
+              "content": "To exercise your right of withdrawal, you must inform the Owner in writing within the 14-day period. Upon receipt of your withdrawal notice, the Owner will refund any fees paid for the product or service within 14 days."
+            },
+            {
+              "title": "Effects of Withdrawal",
+              "content": "Upon withdrawal, you must immediately cease using any products or services purchased through the Website."
+            },
+            {
+              "title": "Guarantees",
+              "content": "The Owner does not guarantee any specific results from using any products or services purchased through the Website."
+            }
+          ]
+        ]
+      },
+      {
+        "title": "Money-Back-Guarantee for Services",
+        "href": "money-back-guarantee-for-services",
+        "isH5": true,
+        "paragraphs": [
+          "If unsatisfied with any services purchased through the Website, you may be eligible for a refund. Please contact the Owner for more information."
+        ]
+      },
+      {
+        "title": "Common Provisions",
+        "isH5": true,
+        "paragraphs": [
+          [
+            {
+              "title": "Assignment of Contract",
+              "content": "The Owner may assign its rights and obligations under these Terms without notice or liability. You may not assign or transfer any of your rights or obligations under these Terms without the Owner's prior written consent."
+            },
+            {
+              "title": "Governing Law",
+              "content": "These Terms and any dispute arising out of or related to these Terms shall be governed by and construed in accordance with the laws of the United States and the State of California without regard to its conflict of law provisions."
+            },
+            {
+              "title": "Dispute Resolution",
+              "content": "Any dispute arising out of or related to these Terms shall be resolved through arbitration in accordance with the rules of the law."
+            },
+            {
+              "title": "Amicable Dispute Resolution",
+              "content": "Before initiating any arbitration proceeding, the parties agree to attempt to resolve any dispute amicably through negotiation."
+            }
+          ]
+        ]
+      }
+    ],
+    "contact_information": {
+      "title": "Contact Information",
+      "text": "If you have any questions about these Terms or the Website, please contact the Owners at",
+      "href": "contact-information",
+      "emails": ["armen@gopeak.io", "dmitri@gopeak.io "]
+    }
+  },
+  "sidebar": {
+    "header": "Terms and Conditions",
+    "items": [
+      {
+        "text": "Account Registration",
+        "href": "account-registration"
+      },
+      {
+        "text": "Account Termination",
+        "href": "account-termination"
+      },
+      {
+        "text": "Account Suspension and Deletion",
+        "href": "account-suspension-and-deletion"
+      },
+      {
+        "text": "Content on this Website",
+        "href": "content-on-this-website"
+      },
+      {
+        "text": "Rights Regarding Content on this Website - All Rights Reserved",
+        "href": "rights-regarding-content-on-this-website-all-rights-reserved"
+      },
+      {
+        "text": "Access to External Resources",
+        "href": "access-to-external-resources"
+      },
+      {
+        "text": "Acceptable Use",
+        "href": "acceptable-use"
+      },
+      {
+        "text": "Terms and Conditions of Sale",
+        "href": "terms-and-conditions-of-sale"
+      },
+      {
+        "text": "Money-Back-Guarantee for Services",
+        "href": "money-back-guarantee-for-services"
+      },
+      {
+        "text": "Contact Information",
+        "href": "contact-information"
+      }
+    ]
+  }
+}

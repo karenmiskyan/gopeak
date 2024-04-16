@@ -1,0 +1,274 @@
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.h7,
+.h8 {
+  margin-bottom: $h-mb;
+}
+
+h1,
+.h1 {
+  font-size: $h1-fz;
+  line-height: $h1-lh;
+  letter-spacing: $h1-ls;
+  font-weight: $h1-fw;
+}
+h2,
+.h2 {
+  font-size: $h2-fz;
+  line-height: $h2-lh;
+  letter-spacing: $h2-ls;
+  font-weight: $h2-fw;
+}
+h3,
+.h3 {
+  font-size: $h3-fz;
+  line-height: $h3-lh;
+  letter-spacing: $h3-ls;
+  font-weight: $h3-fw;
+}
+h4,
+.h4 {
+  font-size: $h4-fz;
+  line-height: $h4-lh;
+  letter-spacing: $h4-ls;
+  font-weight: $h4-fw;
+}
+h5,
+.h5 {
+  font-size: $h5-fz;
+  line-height: $h5-lh;
+  letter-spacing: $h5-ls;
+  font-weight: $h5-fw;
+}
+
+h6,
+.h6 {
+  font-size: $h6-fz;
+  line-height: $h6-lh;
+  letter-spacing: $h6-ls;
+  font-weight: $h6-fw;
+}
+
+.h7 {
+  font-size: $h7-fz;
+  line-height: $h7-lh;
+  letter-spacing: $h7-ls;
+  font-weight: $h7-fw;
+}
+
+.h8 {
+  font-size: $h8-fz;
+  line-height: $h8-lh;
+  letter-spacing: $h8-ls;
+  font-weight: $h8-fw;
+}
+
+.h9 {
+  font-size: $h9-fz;
+  line-height: $h9-lh;
+  letter-spacing: $h9-ls;
+  font-weight: $h9-fw;
+}
+
+p {
+  margin-bottom: $p-mb;
+}
+
+.fw {
+  &-100 {
+    font-weight: 100;
+  }
+  &-200 {
+    font-weight: 200;
+  }
+  &-300,
+  &-light {
+    font-weight: 300;
+  }
+  &-400,
+  &-regular {
+    font-weight: 400;
+  }
+  &-500,
+  &-medium {
+    font-weight: 500;
+  }
+  &-600 {
+    font-weight: 600;
+  }
+  &-700,
+  &-bold {
+    font-weight: 700;
+  }
+  &-800 {
+    font-weight: 800;
+  }
+  &-900 {
+    font-weight: 900;
+  }
+}
+
+.text {
+  // Sizes
+  &-lg {
+    @include text-types($text-lg-fz, $text-lg-ls, $text-lg-lh);
+  }
+  &-md {
+    @include text-types($text-md-fz, $text-md-ls, $text-md-lh);
+  }
+  &-sm {
+    @include text-types($text-sm-fz, $text-sm-ls, $text-sm-lh);
+  }
+  &-xs {
+    @include text-types($text-xs-fz, $text-xs-ls, $text-xs-lh);
+  }
+  &-xxs {
+    @include text-types($text-xxs-fz, $text-xxs-ls, $text-xxs-lh);
+  }
+  &-fs {
+    @for $j from 1 to 12 {
+      &-#{10+$j*2} { font-size: 10 + $j*2px; line-height: 1.5}
+    }
+  }
+
+  // Alignment
+  &-left {
+    text-align: left;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-justify {
+    text-align: justify;
+  }
+
+  // Behavior
+  &-ellipsis {
+    @include ellipsis();
+  }
+  &-clip {
+    @include clip();
+  }
+  &-pre {
+    white-space: pre;
+  }
+  &-pre-line {
+    white-space: pre-line;
+  }
+  &-undecorated {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  &-underline {
+    &,
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+  &-line-through {
+    text-decoration: line-through;
+  }
+  
+  &-italic {
+    font-style: italic;
+  }
+
+  &-color {
+    &-red {
+      color: $red;
+    }
+    &-white {
+      color: $white;
+    }
+    &-white-70 {
+      color: $white-70;
+    }
+    &-white-85 {
+      color: rgba($color: $white, $alpha: 0.85);
+    }
+    &-midnight-44 {
+      color: rgba($color: $midnight, $alpha: 0.44);
+    }
+    &-midnight-90 {
+      color: rgba($color: $midnight, $alpha: 0.9);
+    }
+    &-secondary {
+      color: $secondary;
+    }
+    &-gray-700 {
+      color: $gray-700;
+    }
+    &-routing-path {
+      color: #898895;
+    }
+  }
+
+  
+}
+
+.title-underline {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 83px;
+    height: 4px;
+    border-radius: 4px;
+    position: absolute;
+    @include calc(top, "100% + 8px");
+    left: 0;
+    background-color: $gray-700;
+  }
+
+  // types
+  &-success::after {
+    background-color: $success;
+  }
+
+  &-warning::after {
+    background-color: $warning;
+  }
+
+  &-danger::after {
+    background-color: $danger;
+  }
+
+  &-gray-500::after {
+    background-color: $gray-500;
+  }
+}
+
+.section-title {
+  @media (max-width: $screen-sm-desktop-size) {
+    @include heading-types($h4-fz, $h4-lh, $h4-ls, $h4-fw);
+  }
+  @media (min-width: $screen-sm-desktop-size) {
+    @include heading-types($h3-fz, $h3-lh, $h3-ls, $h3-fw);
+  }
+
+  &-mobile {
+    @media (max-width: $screen-mobile-size) {
+      @include heading-types($h4-fz, $h4-lh, $h4-ls, $h4-fw);
+    }
+  }
+}

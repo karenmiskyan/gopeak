@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //@include no-select;
+}
+
+html,
+body {
+  font-size: $primary-font-size;
+  font-family: $primary-font;
+  line-height: $primary-line-height;
+  letter-spacing: $primary-letter-spacing;
+  font-weight: $primary-font-weight;
+  color: $primary-font-color;
+  background-color: $primary-bg-color;
+  @include font-smoothing(antialiased);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  border-top-color: $border-color;
+}

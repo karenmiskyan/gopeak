@@ -1,0 +1,17 @@
+// @[Fonts]
+$fonts-folder-path:                 '../../../assets/fonts/';
+
+$default-fonts:                      'Arial', 'Helvetica', "Public sans-serif";
+$font-Inter:                         'Inter', "Public sans", $default-fonts;
+$font-sans:                           "Public sans", 'Inter', $default-fonts;
+
+$base-font:                          $font-Inter;
+
+
+.font-sans {
+    font-family: $font-sans;
+}
+
+.font-Inter {
+    font-family: $font-Inter;
+}

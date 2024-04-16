@@ -1,0 +1,5 @@
+user-agent: *
+
+Disallow: /static/
+
+Sitemap: https://www.gopeak.io/sitemap.xml

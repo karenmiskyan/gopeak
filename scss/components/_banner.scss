@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner-box {
+  padding: 10px 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 8px;
+}
+
+.banner-content {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.banner-icon {
+  margin-top: 3px;
+  margin-right: 20px;
+}
+
+.banner-icon path {
+  fill: #3C4151;
+}

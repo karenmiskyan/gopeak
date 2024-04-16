@@ -1,0 +1,194 @@
+$times: 100;
+
+.t {
+  &-20 {
+    &-px {
+      top: 20px;
+    }
+  }
+  &-25 {
+    &-px {
+      top: 25px;
+    }
+  }
+  &-30 {
+    &-px {
+      top: 30px;
+    }
+  }
+  &-40 {
+    &-px {
+      top: 40px;
+    }
+  }
+  &-80 {
+    &-px {
+      top: 80px;
+    }
+  }
+  &-150 {
+    &-px {
+      top: 150px;
+    }
+  }
+  &-164 {
+    &-px {
+      top: 164px;
+    }
+  }
+  &-195 {
+    &-px {
+      top: 195px;
+    }
+  }
+  &-250 {
+    &-px {
+      top: 250px;
+    }
+  }
+  &-400 {
+    &-px {
+      top: 400px;
+    }
+  }
+
+  // Percentage
+  &-42-p {
+    top: 42%;
+  }
+  &-44-p {
+    top: 44%;
+  }
+  &-100-p {
+    top: 100%;
+  }
+
+  // Responsive
+  &-md {
+    &-40-px {
+      @include media-breakpoint-up(md) {
+        top: 40px;
+      }
+    }
+    &-75-px {
+      @include media-breakpoint-up(md) {
+        top: 75px;
+      }
+    }
+    &-87-px {
+      @include media-breakpoint-up(md) {
+        top: 87px;
+      }
+    }
+    &-131-px {
+      @include media-breakpoint-up(md) {
+        top: 131px;
+      }
+    }
+    &-150-px {
+      @include media-breakpoint-up(md) {
+        top: 150px;
+      }
+    }
+  }
+}
+
+.l {
+  // Percentage
+  &-9-p {
+    left: 9%;
+  }
+  &-35-p {
+    left: 35%;
+  }
+  &-100-p {
+    left: 100%;
+  }
+  &-102-px {
+    left: 102px;
+  }
+}
+
+.b {
+  // Percentage
+  &-17-p {
+    bottom: 17%;
+  }
+  &-100-p {
+    bottom: 100%;
+  }
+}
+
+.r {
+  // Percentage
+  &-8-p {
+    right: 8%;
+  }
+  &-100-p {
+    right: 100%;
+  }
+}
+
+.z-index {
+  &-1 {
+    z-index: 1;
+  }
+  &-2 {
+    z-index: 2;
+  }
+  &-3 {
+    z-index: 3;
+  }
+  &-4 {
+    z-index: 4;
+  }
+  &-11 {
+    z-index: 11;
+  }
+}
+
+.position {
+  &-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include translate(-50%, -50%);
+  }
+  &-x-center {
+    position: absolute;
+    left: 50%;
+    @include translate(-50%, 0);
+  }
+  &-y-center {
+    position: absolute;
+    top: 50%;
+    @include translate(0, -50%);
+  }
+
+  &-lg {
+    &-sticky {
+      @include media-breakpoint-up(lg) {
+        position: sticky;
+      }
+    }
+  }
+}
+
+@mixin positions {
+  @for $i from 0 through $times {
+    .t-#{$i} {
+      top: $i * $spacer !important;
+    }
+    .b-#{$i} {
+      bottom: $i * $spacer !important;
+    }
+    .l-#{$i} {
+      left: $i * $spacer !important;
+    }
+    .r-#{$i} {
+      right: $i * $spacer !important;
+    }
+  }
+}
+
+@include positions;

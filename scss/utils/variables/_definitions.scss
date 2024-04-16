@@ -1,0 +1,299 @@
+// @[Definitions]
+// Base
+$primary-font:                       $base-font;
+$primary-font-size:                  $text-md-fz;
+$primary-line-height:                $text-md-lh;
+$primary-letter-spacing:             $text-md-ls;
+$primary-font-color:                 $midnight;
+$primary-bg-color:                   $white;
+$primary-font-weight:                400;
+
+// Theme colors
+$primary:                            $midnight;
+$secondary:                          $purple;
+$secondary-light:                    $purple-200;
+$success:                            $green;
+$success-light:                      $green-light;
+$warning:                            $orange;
+$danger:                             $red;
+$danger-light:                       $red-light;
+$disabled:                           $gray-300;
+
+// Buttons
+$btn-xs-h:                           24px;
+$btn-xs-fz:                          12px;
+$btn-xs-lh:                          20px;
+$btn-xs-p:                           0 14px;
+
+$btn-sm-h:                           32px;
+$btn-sm-fz:                          14px;
+$btn-sm-lh:                          28px;
+$btn-sm-p:                           0 18px;
+
+$btn-md-h:                           40px;
+$btn-md-fz:                          16px;
+$btn-md-lh:                          36px;
+$btn-md-p:                           0 23px;
+
+$btn-lg-h:                           54px;
+$btn-lg-fz:                          18px;
+$btn-lg-lh:                          48px;
+$btn-lg-p:                           0 41px;
+
+$btn-radius:                         10px;
+$btn-fw:                             700;
+
+$btn-primary-bg:                     $primary;
+$btn-primary-border:                 $primary;
+$btn-primary-hover-bg:               $midnight-500;
+$btn-primary-hover-border:           $midnight-500;
+$btn-primary-active-bg:              $primary;
+$btn-primary-active-border:          $midnight-500;
+
+$btn-outline-primary-border:         $primary;
+
+$btn-dark-bg:                        $gray-700;
+$btn-dark-border:                    $gray-700;
+$btn-dark-hover-bg:                  $gray-800;
+$btn-dark-hover-border:              $gray-800;
+$btn-dark-active-bg:                 $gray-700;
+$btn-dark-active-border:             $gray-800;
+
+$btn-outline-dark-border:            $gray-800;
+
+$btn-secondary-bg:                   $gray-400;
+$btn-secondary-border:               $gray-400;
+$btn-secondary-color:                $midnight;
+$btn-secondary-hover-bg:             $gray-300;
+$btn-secondary-hover-border:         $gray-300;
+$btn-secondary-hover-color:          $midnight;
+$btn-secondary-active-bg:            $gray-300;
+$btn-secondary-active-border:        $gray-300;
+$btn-secondary-active-color:         $midnight;
+
+$btn-negative-bg:                    $gray-400;
+$btn-negative-border:                $gray-400;
+$btn-negative-color:                 $danger;
+$btn-negative-hover-bg:              $danger;
+$btn-negative-hover-border:          $danger;
+$btn-negative-hover-color:           $white;
+$btn-negative-active-bg:             $danger;
+$btn-negative-active-border:         $orange-700;
+$btn-negative-active-color:          $white;
+
+$btn-negative-default-bg:            $gray-400;
+$btn-negative-default-border:        $gray-400;
+$btn-negative-default-color:         $gray-700;
+$btn-negative-default-hover-bg:      $gray-600;
+$btn-negative-default-hover-border:  $gray-600;
+$btn-negative-default-hover-color:   $white;
+$btn-negative-default-active-bg:     $gray-600;
+$btn-negative-default-active-border: $gray-700;
+$btn-negative-default-active-color:  $white;
+
+$btn-speed-control-bg:               $gray-300;
+$btn-speed-control-border:           $gray-300;
+$btn-speed-control-color:            $gray-600;
+$btn-speed-control-hover-bg:         $gray-400;
+$btn-speed-control-hover-border:     $gray-400;
+$btn-speed-control-hover-color:      $gray-600;
+$btn-speed-control-active-bg:        $gray-500;
+$btn-speed-control-active-border:    $gray-500;
+$btn-speed-control-active-color:     $gray-700;
+
+$btn-social-bg:                      $gray-300;
+$btn-social-border:                  $gray-300;
+$btn-social-color:                   $gray-600;
+$btn-social-hover-bg:                $gray-300;
+$btn-social-hover-border:            $primary;
+$btn-social-hover-color:             $gray-600;
+$btn-social-active-bg:               $purple-100;
+$btn-social-active-border:           $primary;
+$btn-social-active-color:            $gray-600;
+
+$btn-success-color:                  $white;
+
+$btn-disabled-bg:                    $gray-400;
+$btn-disabled-border:                $gray-400;
+$btn-disabled-color:                 $gray-500;
+
+// Fields
+$input-sm-h:                         32px;
+$input-sm-fz:                        13px;
+$input-sm-lh:                        20px;
+$input-sm-fw:                        700;
+$input-sm-p:                         6px 24px;
+
+$input-md-h:                         40px;
+$input-md-fz:                        16px;
+$input-md-lh:                        28px;
+$input-md-fw:                        700;
+$input-md-p:                         6px 24px;
+
+$input-lg-h:                         52px;
+$input-lg-fz:                        16px;
+$input-lg-lh:                        28px;
+$input-lg-fw:                        700;
+$input-lg-p:                         12px 24px;
+
+$input-default-h:                    $input-md-h;
+$input-default-fz:                   $input-md-fz;
+$input-default-lh:                   $input-md-lh;
+$input-default-fw:                   $input-md-fw;
+$input-default-p:                    $input-md-p;
+
+$input-border-color:                 $gray-500;
+$input-border-radius:                $radius * 2;
+
+$input-bg-color:                     $white;
+$input-color:                        $gray-700;
+$input-placeholder-color:            $gray-500;
+$input-placeholder-fw:               500;
+$input-carret-color:                 $primary;
+
+$input-focus-border-color:           $primary;
+$input-active-border-color:          $primary;
+$input-disabled-border-color:        $gray-300;
+$input-disabled-bg-color:            $white;
+$input-disabled-color:               $gray-500;
+$input-disabled-placeholder-color:   transparentize($gray-500, .5); // TODO: temporary color, update it
+$input-valid-border-color:           $success;
+$input-invalid-border-color:         $danger;
+
+$input-mb:                           16px;
+
+$input-label-color:                  $input-placeholder-color;
+$input-label-bg-color:               $white;
+$input-label-fz:                     $input-md-fz;
+$input-label-lh:                     $input-md-lh;
+$input-label-fw:                     500;
+$input-label-p:                      4px 12px;
+
+$input-sm-label-fz:                  $input-sm-fz;
+$input-sm-label-lh:                  $input-sm-lh;
+$input-sm-label-p:                   4px 12px;
+
+$input-lg-label-fz:                  $input-lg-fz;
+$input-lg-label-lh:                  $input-lg-lh;
+$input-lg-label-p:                   10px 12px;
+
+$input-label-active-color:           $gray-600;
+$input-label-active-bg-color:        $white;
+$input-label-active-fz:              12px;
+$input-label-active-lh:              20px;
+$input-label-active-fw:              500;
+$input-label-active-p:               0 10px;
+
+$input-feedback-fz:                  12px;
+$input-feedback-lh:                  20px;
+$input-feedback-fw:                  400;
+$input-feedback-mt:                  8px;
+
+$checkbox-size:                      24px;
+$radio-size:                         24px;
+
+$checkbox-sm-size:                   20px;
+$radio-sm-size:                      20px;
+
+// Range Input
+$range-input-width:                  254px;
+$range-input-height:                 6px;
+$range-input-radius:                 20px;
+$thumb-shadow:                       0px 1px 3px rgba(42, 92, 71, 0.2);
+$thumb-size:                         21px;
+$thumb-radius:                       100%;
+
+$range-input-width-sm:               72px;
+$range-input-width-lg:               340px;
+
+// Dropdowns
+$dropdown-placeholder-color:         $gray-600;
+$dropdown-disabled-color:            $gray-500;
+$dropdown-color:                     $gray-700;
+
+$dropdown-mb:                        16px;
+
+// Pills
+$pill-filled-bg:                     $gray-400;
+$pill-filled-color:                  $gray-600;
+$pill-filled-border-color:           $gray-400;
+
+$pill-outlined-bg:                   transparent;
+$pill-outlined-color:                $gray-600;
+$pill-outlined-border-color:         $gray-600;
+
+$pill-success-bg:                    $success-light;
+$pill-success-color:                 $success;
+$pill-success-border-color:          $success-light;
+
+$pill-warning-bg:                    $beige;
+$pill-warning-color:                 $gray-700;
+$pill-warning-border-color:          $beige;
+
+$pill-danger-bg:                     $danger-light;
+$pill-danger-color:                  $danger;
+$pill-danger-border-color:           $danger-light;
+
+$pill-xs-h:                          24px;
+$pill-xs-p:                          4px 10px;
+$pill-xs-fz:                         12px;
+$pill-xs-lh:                         16px;
+
+$pill-sm-h:                          28px;
+$pill-sm-p:                          4px 20px;
+$pill-sm-fz:                         12px;
+$pill-sm-lh:                         20px;
+
+$pill-md-h:                          32px;
+$pill-md-p:                          4px 20px;
+$pill-md-fz:                         14px;
+$pill-md-lh:                         24px;
+
+$pill-lg-h:                          40px;
+$pill-lg-p:                          7px 24px;
+$pill-lg-fz:                         16px;
+$pill-lg-lh:                         26px;
+
+// Chips
+$chips-height:                       40px;
+$chips-border-radius:                40px;
+$chip-fw:                            700;
+$chip-fz:                            16px;
+$chip-lh:                            26px;
+$chips-bg-color:                     $gray-400;
+$chips-color:                        $gray-600;
+$chips-border-color:                 $gray-400;
+$chips-padding:                      7px 12px 7px 16px;
+
+$chips-invalid-bg-color:             $danger-light;
+$chips-invalid-border-color:         $danger;
+$chips-invalid-color:                $danger;
+
+// Modals
+$modal-sm-width:                     402px;
+$modal-md-width:                     560px;
+$modal-lg-width:                     612px;
+$modal-xlg-width:                    1064px;
+
+// Header
+$header-height:                      64px;
+
+// Sidebar
+$sidebar-width:                      240px;
+
+// Tables;
+$table-cell-max-width:               34vw;
+
+// Transitions
+$base-timing-function:               ease-in-out;
+
+$transition-fast:                    150ms $base-timing-function;
+$transition-normal:                  300ms $base-timing-function;
+$transition-slow:                    450ms $base-timing-function;
+
+$transition-dialog:                  $transition-fast;
+$transition-details-bar:             250ms ease;
+
+// Skeleton
+$skeleton-bg:                        $gray-300;
+$skeleton-animation-bg:              linear-gradient(90deg, transparent, $gray-400, transparent);

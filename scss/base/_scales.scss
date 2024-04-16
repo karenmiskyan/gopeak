@@ -1,0 +1,32 @@
+.scale {
+  &-0 {
+    @include scale(0)
+  }
+  &-01 {
+    @include scale(.1)
+  }
+  &-02 {
+    @include scale(.2)
+  }
+  &-03 {
+    @include scale(.3)
+  }
+  &-04 {
+    @include scale(.4)
+  }
+  &-05 {
+    @include scale(.5)
+  }
+  &-06 {
+    @include scale(.6)
+  }
+  &-07 {
+    @include scale(.7)
+  }
+  &-08 {
+    @include scale(.8)
+  }
+  &-09 {
+    @include scale(.9)
+  }
+}

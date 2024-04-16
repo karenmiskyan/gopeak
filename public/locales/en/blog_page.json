@@ -1,0 +1,26 @@
+{
+  "title": "Blog",
+  "meta_desc": "Unique link building tips from our link building experts",
+  "meta_title": "Gopeak.io | Link Building Blog",
+  "search_section": {
+    "heading": "Explore Our Link Building Blog",
+    "placeholder": "Search for articles",
+    "search_result": "Search result",
+    "no_result": "No results"
+  },
+  "popular_articles_section": {
+    "title": "Popular Articles"
+  },
+  "latest_articles_section": {
+    "title": "Latest Articles",
+    "load_more": "Load More"
+  },
+  "get_interesting_staff_section": {
+    "title": "Ready to Rank Your Site with Authority Backlinks?",
+    "button": "Book a Call",
+    "placeholder": "Your Email"
+  },
+  "single" : {
+    "similar": "More Articles Like This"
+  }
+}

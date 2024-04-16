@@ -1,0 +1,260 @@
+// ATTENTION!!! This is for custom classes/styles, try to avoid it and use global classes if possible
+//padding and margin
+.p-x-default {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.p-xs-x-default-15 {
+  @media (max-width: $screen-mobile-size) { //440
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+//justifying
+.justify-end-from-sm {
+  @media (min-width: $screen-sm-desktop-size) {
+    //padding-left: calc(20px - ((1440px - 100vw) * 78 / 1065));
+    //padding-right: calc(20px - ((1440px - 100vw) * 87 / 1065));
+    justify-content: flex-end !important;
+  }
+}
+
+.basic-container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.basic-container-lg {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 585px) {
+    .contact-title-info {
+      margin: 0 auto!important;
+    }
+    padding-top: 10px!important;
+  }
+}
+
+.basic-container-md {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.basic-container-sm {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.routing-navigation {
+  @media (min-width: $screen-tablet-size) {
+    //padding-left: calc(20px - ((1440px - 100vw) * 78 / 1065));
+    //padding-right: calc(20px - ((1440px - 100vw) * 87 / 1065));
+    padding: 10px 40px 0;
+    margin-top: 25px;
+  }
+
+  @media (max-width: $screen-tablet-size) {
+    padding: 10px 22px 0;
+    margin-top: 25px;
+  }
+
+  @media (max-width: 370px) {
+    padding: 10px 12px 0;
+  }
+}
+
+.cursor {
+  &-default {
+    cursor: default;
+  }
+
+  &-pointer {
+    cursor: pointer;
+  }
+
+  &-text {
+    cursor: text;
+  }
+}
+
+.no-select {
+  @include no-select;
+}
+
+.no-scroll-bar {
+  @include no-scroll-bar;
+}
+
+.no-events {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+.op {
+  &-0 {
+    opacity: 0;
+  }
+
+  &-1 {
+    opacity: 0.1;
+  }
+
+  &-2 {
+    opacity: 0.2;
+  }
+
+  &-3 {
+    opacity: 0.3;
+  }
+
+  &-4 {
+    opacity: 0.4;
+  }
+
+  &-5 {
+    opacity: 0.5;
+  }
+
+  &-6 {
+    opacity: 0.6;
+  }
+
+  &-7 {
+    opacity: 0.7;
+  }
+
+  &-8 {
+    opacity: 0.8;
+  }
+
+  &-9 {
+    opacity: 0.9;
+  }
+}
+
+.rotate {
+  &-3-15-n {
+    @include rotate(-3.15);
+  }
+
+  &-45 {
+    @include rotate(45);
+  }
+
+  &-50 {
+    @include rotate(50);
+  }
+
+  &-135 {
+    @include rotate(135);
+  }
+
+  &-180 {
+    @include rotate(180);
+  }
+
+  &-225 {
+    @include rotate(225);
+  }
+
+  &-270 {
+    @include rotate(270);
+  }
+
+  &-315 {
+    @include rotate(315);
+  }
+}
+
+.flip {
+  &-x {
+    @include rotateX(180);
+  }
+
+  &-y {
+    @include rotateY(180);
+  }
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.overflow {
+  &-hidden {
+    overflow: hidden !important;
+  }
+
+  &-auto {
+    overflow: auto !important;
+  }
+
+  &-scroll {
+    overflow: scroll !important;
+  }
+
+  &-visible {
+    overflow: visible !important;
+  }
+}
+
+.skew {
+  &-y {
+    &-1 {
+      @include skewY(1);
+    }
+
+    &-2 {
+      @include skewY(2);
+    }
+
+    &-3 {
+      @include skewY(3);
+    }
+
+    &--1 {
+      @include skewY(-1);
+    }
+
+    &--2 {
+      @include skewY(-2);
+    }
+
+    &--3 {
+      @include skewY(-3);
+    }
+  }
+}
+
+.no-resize {
+  resize: none;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.overlay-loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.loading-container {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

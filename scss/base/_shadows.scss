@@ -1,0 +1,20 @@
+.shadow {
+  &-1 {
+    box-shadow: $shadow-level-1;
+  }
+  &-2 {
+    box-shadow: $shadow-level-2;
+  }
+  &-3 {
+    box-shadow: $shadow-level-3;
+  }
+  &-4 {
+    box-shadow: $shadow-level-4;
+  }
+  &-4__temp {
+    box-shadow: $shadow-level-4__temp;
+  }
+  &-form {
+    box-shadow: $shadow-form;
+  }
+}

@@ -1,0 +1,270 @@
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+
+  th, td {
+    padding: 10px;
+    vertical-align: middle;
+    max-width: $table-cell-max-width;
+    border: none;
+    @extend .text-sm;
+    @extend .text-ellipsis;
+  }
+
+  thead {
+    th, td {
+      &:first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      &:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+
+    th {
+      background-color: $gray-300;
+      border-bottom: none;
+      color: $gray-600;
+      @extend .fw-bold;
+      @include transition($transition-fast);
+
+      svg {
+        width: 16px;
+        height: 16px;
+        @include transition($transition-fast);
+      }
+
+      &:not(.sortable) svg path {
+        display: none;
+      }
+
+      &.sortable {
+        cursor: pointer;
+
+        &:hover {
+          color: $gray-700;
+
+          svg path[fill="#{$gray-500}"] {
+            fill: $gray-600
+          }
+        }
+      }
+    }
+  }
+
+  tbody {
+    td, th {
+      &:last-child {
+        .btn:not(.btn-unblock) {
+          float: right;
+          margin: -8px 0;
+          @include translate(16px, 0);
+        }
+      }
+    }
+  }
+
+  .table-arrow {
+    width: 16px;
+    height: 16px;
+    float: right;
+
+    path {
+      fill: $gray-500;
+    }
+  }
+
+  .btn-unblock {
+    opacity: 0;
+    margin: -8px 0;
+  }
+
+  //Behavior
+  &-fixed {
+    table-layout: fixed;
+  }
+
+  &-separated {
+    tbody {
+      tr {
+        th, td {
+          border-top: 1px solid $gray-400;
+          border-bottom: 1px solid transparent;
+
+          &:first-child {
+            border-left: 1px solid transparent;
+          }
+
+          &:last-child {
+            border-right: 1px solid transparent;
+          }
+        }
+
+        &:first-child {
+          th, td {
+            border-top-color: transparent;
+          }
+        }
+
+        &.active {
+          th, td {
+            border-top-color: $gray-400;
+            border-bottom-color: $gray-400;
+
+            &:first-child {
+              border-left-color: $gray-400;
+            }
+
+            &:last-child {
+              border-right-color: $gray-400;
+            }
+          }
+
+          .table-arrow {
+            @extend .flip-y;
+          }
+        }
+      }
+    }
+
+    &.table-hover {
+      tbody {
+        tr {
+          &.active, &:hover {
+            & + tr {
+              td, th {
+                border-top-color: transparent;
+              }
+            }
+          }
+
+          &:not(.active):hover {
+            td, th {
+              border-top-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-hover {
+    tbody {
+      tr {
+        &.active,
+        &:hover {
+          background-color: $gray-300;
+
+          th, td {
+            &:first-child {
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+            }
+            &:last-child {
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+            }
+          }
+
+          .btn-unblock {
+            opacity: 1;
+          }
+        }
+
+        &.active {
+          .table-arrow path {
+            fill: $gray-700;
+          }
+        }
+      }
+    }
+  }
+
+  //Modifiers
+  &-invoices {
+    tbody {
+      td:first-child {
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 8px;
+          width: 8px;
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+          background-color: $gray-300;
+          opacity: 0;
+        }
+      }
+    }
+
+    .row-indicator {
+      width: 16px;
+      background-color: $white;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      @include transition($transition-fast);
+
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+      }
+
+      &::before {
+        width: 1px;
+        background-color: $gray-400;
+        top: -2px;
+        bottom: -2px;
+        left: 3px;
+      }
+
+      &::after {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $gray-500;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        @include translate(0, -50%);
+      }
+    }
+
+    tr {
+      &:first-child .row-indicator::before {
+        top: 14px !important;
+      }
+      &:last-child .row-indicator::before {
+        bottom: 14px !important;
+      }
+    }
+
+    tr:hover {
+      td:first-child::after {
+        opacity: 1;
+      }
+
+      .row-indicator::after {
+        background-color: $primary;
+      }
+    }
+  }
+
+  .row-action-group {
+    opacity: 0;
+  }
+
+  tr:hover .row-action-group {
+    opacity: 1;
+  }
+}

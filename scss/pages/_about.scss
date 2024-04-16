@@ -1,0 +1,58 @@
+.who-we-are-heading {
+  @media (max-width: $screen-mobile-size) {
+    @include heading-types($h3-fz, $h3-lh, $h3-ls, $h3-fw);
+  }
+}
+
+.co-fonder-section {
+  background-color: #f9f9ff;
+
+
+  h3 {
+    @media (max-width: $screen-mobile-size) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .co-founder-image-wrapper {
+    @media (max-width: $screen-mobile-size) {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.contact-us-bottom-section.about {
+  @media (max-width: $screen-mobile-size) {
+    margin-top: 84px !important;
+    h3 {
+      width: calc(100% - 30px) !important;
+      margin: 0 auto 8px;
+    }
+  }
+}
+
+.co-founders-pitch {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    background-image: url("../../public/assets/images/png/double_quote.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 101px;
+    height: 101px;
+    left: -42px;
+    top: -10px;
+    z-index: -1;
+  }
+}
+
+.highlight-text {
+  color: #6374FF;
+  font-weight: 700;
+}

@@ -1,0 +1,53 @@
+.we-work-with-container {
+  @media (min-width: 800px) {
+    background-image: url("../../public/assets/images/png/we_work_with_efficient_tools_bg.png");
+  }
+  @media (min-width: 400px) and (max-width: 800px) {
+    background-image: url("../../public/assets/images/png/we_work_with_efficient_tools_bg_mobile.png");
+  }
+  @media (max-width: 400px) {
+    //background-image: none;
+    background-image: url("../../public/assets/images/png/we_work_with_efficient_tools_bg_mobile.png");
+    height: 420px;
+    background-position: bottom;
+  }
+  background-position-x: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #F4F4FF;
+
+  .how-to-start-heading {
+    @media (max-width: 440px) {
+      font-size: 24px;
+    }
+  }
+}
+
+.key-phrases-how-we-work {
+  & > div {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+.how-we-work-1-section {
+  h1, p {
+    @media (max-width: 440px) {
+      text-align: center;
+    }
+  }
+}
+
+.how-we-work-2-section {
+    @media (max-width: 440px) {
+      width: calc(100% - 15px);
+      margin: 0 auto !important;
+      padding: 0;
+    }
+}
+
+.we-work-with-container + .contact-us-bottom-section {
+  @media (max-width: 440px) {
+    margin-top: 80px !important;
+  }
+}

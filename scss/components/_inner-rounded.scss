@@ -1,0 +1,63 @@
+@mixin after-and-before {
+  &:after, &:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    position: absolute;
+    z-index: 10;
+    border-radius: 100%;
+  }
+}
+
+.inner-rounded {
+  position: relative;
+  @include after-and-before;
+  &:after {
+    right: -10px;
+  }
+  &:before {
+    left: -10px;
+  }
+  .additional-inner-rounded {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: none;
+    @include after-and-before;
+  }
+  &.inner {
+    &-radius {
+      &:after, &:before {
+        top: -7px;
+        right: -10px;
+      }
+      .additional-inner-rounded {
+        display: block;
+        &:after {
+          right: -10px;
+          bottom: -10px;
+        }
+        &:before {
+          left: -10px;
+          bottom: -10px;
+        }
+      }
+    }
+    &-top-radius {
+      &:after, &:before {
+        top: -7px;
+        right: -10px;
+      }
+      &:before {
+        left: -10px;
+      }
+    }
+    &-bottom-radius {
+      &:after, &:before {
+        bottom: -10px;
+      }
+    }
+  }
+}

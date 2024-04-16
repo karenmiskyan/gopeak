@@ -1,0 +1,118 @@
+// @[Screen sizes]
+$screen-sm-mobile-size: 350px;
+$screen-mobile-size-2: 375px;
+$screen-mobile-size: 440px;
+$screen-tablet-size-small: 568px;
+$screen-tablet-size: 780px;
+$screen-tablet-size-2: 768px;
+$screen-sm-desktop-size: 1024px;
+$screen-md-desktop-size: 1320px;
+
+
+// @[Spacers]
+$spacer: 2px !default;
+$spacers: (0:0);
+
+@for $i from 1 through 100 {
+  $spacers: map-merge($spacers, (
+    $i: ($i * $spacer)
+  ));
+}
+// Usage:
+// p-1 ... p-100, mx-1 ... mx-100
+
+
+// @[Size Settings]
+$p: 0%;
+$size: 5 !default;
+$sizes: () !default;
+
+@for $i from 1 through 100 {
+  $sizes: map-merge($sizes, (
+    $i * 5: ($i * $size) + $p
+  ));
+}
+// Usage:
+// w-5, w-10, w-15 ... w-100 (in percents)
+
+
+// @[Theme Settings]
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    // Main Colors
+    "white":                  $white,
+    "primary":                $primary,
+    "secondary":              $secondary,
+    "secondary-light":        $secondary-light,
+    "success":                $success,
+    "warning":                $warning,
+    "danger":                 $danger,
+    "disabled":               $disabled,
+
+    // Secondary Colors
+    "bone":                   $bone,
+    "beige":                  $beige,
+    "beige-dark":  $beige-dark,
+    "corn":                   $corn,
+    "banana":                 $banana,
+    "barley-white":           $barley-white,
+    "success-light":          $success-light,
+    "danger-light":           $danger-light,
+
+    // Gray Factors
+    "gray-100":               $gray-100,
+    "gray-200":               $gray-200,
+    "gray-300":               $gray-300,
+    "gray-400":               $gray-400,
+    "gray-450":               $gray-450,
+    "gray-470":               $gray-470,
+    "gray-500":               $gray-500,
+    "gray-600":               $gray-600,
+    "gray-700":               $gray-700,
+    "gray-800":               $gray-800,
+
+    // Tints & Shades
+    "purple-50":              $purple-50,
+    "purple-100":             $purple-100,
+    "purple-200":             $purple-200,
+    "purple-300":             $purple-300,
+    "purple-400":             $purple-400,
+    "purple-450":             $purple-450,
+    "purple-500":             $purple-500,
+    "purple-600":             $purple-600,
+    "purple-700":             $purple-700,
+    "orange-50":              $orange-50,
+    "orange-100":             $orange-100,
+    "orange-150":             $orange-150,
+    "orange-200":             $orange-200,
+    "orange-300":             $orange-300,
+    "orange-400":             $orange-400,
+    "orange-500":             $orange-500,
+    "orange-600":             $orange-600,
+    "orange-700":             $orange-700,
+  ),
+  $theme-colors
+);
+
+// $grid-columns:                12;
+$grid-gutter-width:           2 * 10px !default;
+
+// @[Grid Settings]
+$grid-breakpoints: (
+  xs: $bp-xs,
+  sm: $bp-sm,
+  md: $bp-md,
+  lg: $bp-lg,
+  xlg: $bp-xlg,
+);
+
+// @[Container Settings]
+$container-max-widths: (
+  xs: $ct-xs,
+  sm: $ct-sm,
+  md: $ct-md,
+  lg: $ct-lg,
+  xlg: $ct-xlg,
+);

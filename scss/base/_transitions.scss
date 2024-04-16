@@ -1,0 +1,36 @@
+.transition {
+  // Speed
+  &-fast {
+    &, svg path{
+      @include transition($transition-fast);
+    }
+  }
+  &-normal {
+    &, svg path{
+      @include transition($transition-normal);
+    }
+  }
+  &-slow {
+    &, svg path{
+      @include transition($transition-slow);
+    }
+  }
+
+  // Timing Function
+  &-fast,
+  &-normal,
+  &-slow {
+    &__ease {
+      @include transition-timing-function('ease')
+    }
+    &__ease-in {
+      @include transition-timing-function('ease-in')
+    }
+    &__ease-out {
+      @include transition-timing-function('ease-out')
+    }
+    &__ease-in-out {
+      @include transition-timing-function('ease-in-out')
+    }
+  }
+}

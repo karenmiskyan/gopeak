@@ -1,0 +1,37 @@
+{
+  "title": "Contact Us",
+  "meta_desc": "Connect with Gopeak Link Builders to get answers to your questions. Elevate your website and achieve higher rankings with us.",
+  "meta_title": "GoPeak | Contact Us",
+  "form_section": {
+    "heading": "Do you have questions to our link builders?",
+    "sub_heading": "We are ready to answer to your questions",
+    "form_items": [
+      {
+        "htmlFor": "name",
+        "labelText": "Name",
+        "placeholder": "Your Name"
+      },
+      {
+        "htmlFor": "mail",
+        "labelText": "Email",
+        "placeholder": "example@gmail.com"
+      },
+      {
+        "htmlFor": "subject",
+        "labelText": "Subject",
+        "placeholder": "Your subject"
+      }
+    ],
+    "textarea": {
+      "htmlFor": "help",
+      "labelText": "How can we help?",
+      "placeholder": "Tell a little about your project..."
+    },
+    "form_btn_text": "Send Message"
+  },
+  "ready_to_talk_business": {
+    "heading": "Ready to Talk Business?",
+    "sub_heading": "Please contact us using the form below",
+    "btn_book_a_demo": "Book a Demo"
+  }
+}

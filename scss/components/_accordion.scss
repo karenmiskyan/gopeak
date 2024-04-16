@@ -1,0 +1,23 @@
+.accordion-item {
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
+
+  div {
+    .close-icon {
+      transform-style: preserve-3d;
+      transition: 0.1s ease-in;
+    }
+  }
+
+  .content {
+    transform-style: preserve-3d;
+    transition: all 0.1s ease-in-out;
+    overflow: hidden;
+
+    &.active {
+      max-height: max-content;
+    }
+    &.inactive {
+      max-height: 0;
+    }
+  }
+}

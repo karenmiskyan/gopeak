@@ -1,0 +1,50 @@
+.stars-before-and-after {
+  position: relative;
+
+  @media (min-width: $screen-tablet-size) {
+    &::before {
+      content: "";
+      background-image: url("../../public/assets/images/png/star-icon.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      left: -110px;
+    }
+    &::after {
+      content: "";
+      background-image: url("../../public/assets/images/png/star-icon.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      transform: scaleX(-1);
+      right: -97px;
+      bottom: -40px;
+    }
+  }
+}
+
+.curly-arrow-after {
+  position: relative;
+
+  @media (min-width: $screen-tablet-size) {
+    &::after {
+      content: "";
+      background-image: url("../../public/assets/images/png/curly-arrow.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      right: -180px;
+      bottom: -15px;
+    }
+  }
+}
+
+.text-with-image-section-image {
+    height: 50%;
+}

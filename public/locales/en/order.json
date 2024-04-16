@@ -1,0 +1,55 @@
+{
+  "title": "Order now",
+  "meta_desc": "We’re a specialist SaaS link building agency that builds great backlinks to enhance your search engine rankings.",
+  "meta_title": "GoPeak | Order now",
+  "order_heading": "Order now",
+  "order_now": "Order now",
+  "change_req": "Change Your Requirements",
+  "order_form": [
+    {
+      "name": "name",
+      "placeholder": "Your Name",
+      "labelText": "Name"
+    },
+    {
+      "name": "surname",
+      "placeholder": "Your Surname",
+      "labelText": "Surname"
+    },
+    {
+      "name": "companyName",
+      "placeholder": "Company Name",
+      "labelText": "Company Name"
+    },
+    {
+      "name": "companyWebsite",
+      "placeholder": "Website Name ",
+      "labelText": "Company Website"
+    },
+    {
+      "name": "websiteNiche",
+      "placeholder": "Website Niche",
+      "labelText": "Website Niche"
+    },
+    {
+      "name": "position",
+      "placeholder": "Position",
+      "labelText": "Position"
+    },
+    {
+      "name": "email",
+      "placeholder": "Your Email",
+      "labelText": "Email"
+    },
+    {
+      "name": "optionalText",
+      "placeholder": "Type Something...",
+      "labelText": "Your Message (optional)",
+      "isTextArea": true
+    }
+  ],
+  "success": "Success!",
+  "submit_text": "Thanks for submitting , our expert will connect with you directly from 4 hours!",
+  "read_blog": "Read Our Blog",
+  "back_to_home": "Back to Homepage"
+}

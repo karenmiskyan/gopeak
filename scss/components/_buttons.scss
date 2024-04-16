@@ -1,0 +1,1000 @@
+.btn {
+  // Default size MD
+  font-weight: $btn-fw;
+  border-radius: $btn-radius;
+  height: $btn-md-h;
+  font-size: $btn-md-fz;
+  line-height: $btn-md-lh;
+  padding: $btn-md-p;
+  border: 2px solid transparent;
+  white-space: nowrap;
+
+  span {
+    display: inline-block;
+  }
+
+  &.btn-block > svg:first-child + span {
+    margin-left: -28px;
+  }
+
+  &.btn-block > span:first-child:not(:last-child) {
+    margin-right: -28px;
+  }
+
+  &:not(:disabled):not(.disabled) {
+    &:focus,
+    &:focus:active {
+      box-shadow: none;
+    }
+  }
+
+  // Button Sizes
+  &-xs {
+    height: $btn-xs-h;
+    font-size: $btn-xs-fz;
+    line-height: $btn-xs-lh;
+    padding: $btn-xs-p;
+    border-radius: 8px;
+
+    &.btn-icon {
+      padding: 0;
+      width: $btn-xs-h;
+    }
+
+    .loader {
+      margin-top: -1px;
+      margin-left: 2px;
+    }
+
+    svg {
+      width: 12px;
+      height: 12px;
+      margin-top: 4px;
+
+      &:first-child:last-child {
+        // Icon button
+        margin-top: -2px;
+      }
+
+      &:last-child:not(:first-child) {
+        margin-left: 6px;
+      }
+
+      &:first-child:not(:last-child) {
+        margin-right: 6px;
+      }
+    }
+
+    &.btn-block > svg:first-child + span {
+      margin-left: -14px;
+    }
+
+    &.btn-block > span:first-child:not(:last-child) {
+      margin-right: -14px;
+    }
+  }
+
+  &-sm {
+    height: $btn-sm-h;
+    font-size: $btn-sm-fz;
+    line-height: $btn-sm-lh;
+    padding: $btn-sm-p;
+    border-radius: 8px;
+
+    &.btn-icon {
+      padding: 0;
+      width: $btn-sm-h;
+    }
+
+    .loader {
+      margin-top: 1px;
+      margin-left: 4px;
+    }
+
+    svg {
+      width: 14px;
+      height: 14px;
+      margin-top: 7px;
+
+      &:first-child:last-child {
+        // Icon button
+        margin-top: -2px;
+      }
+
+      &:last-child:not(:first-child) {
+        margin-left: 6px;
+      }
+
+      &:first-child:not(:last-child) {
+        margin-right: 6px;
+      }
+    }
+
+    &.btn-block > svg:first-child + span {
+      margin-left: -20px;
+    }
+
+    &.btn-block > span:first-child:not(:last-child) {
+      margin-right: -20px;
+    }
+  }
+
+  &-lg {
+    height: $btn-lg-h;
+    font-size: $btn-lg-fz;
+    line-height: $btn-lg-lh;
+    padding: $btn-lg-p;
+
+    &-text-md {
+      font-size: $btn-md-fz;
+      line-height: $btn-md-lh;
+    }
+
+    &-icon {
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &.btn-icon {
+      padding: 0;
+      width: $btn-lg-h;
+    }
+
+    .loader {
+      margin-top: 11px;
+      margin-left: 14px;
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+      margin-top: 15px;
+
+      &:first-child:last-child {
+        // Icon button
+        margin-top: -2px;
+      }
+
+      &:last-child:not(:first-child) {
+        margin-left: 10px;
+      }
+
+      &:first-child:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+
+    &.btn-block > svg:first-child + span {
+      margin-left: -26px;
+    }
+
+    &.btn-block > span:first-child:not(:last-child) {
+      margin-right: -30px;
+    }
+  }
+
+  // Button Behavior
+  &-rounded {
+    border-radius: $spacer * 25;
+  }
+
+  // Button types
+  &-primary,
+  &-outline-primary {
+    &:not(:disabled):not(.disabled):not(.btn-primary-loading):not(
+        .btn-outline-primary-loading
+      ) {
+      &:hover {
+        background-color: $btn-primary-hover-bg;
+        border-color: $btn-primary-hover-border;
+      }
+
+      &:active {
+        background-color: $btn-primary-active-bg;
+        border-color: $btn-primary-active-border;
+      }
+
+      &:hover,
+      &:active {
+        svg path {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+  &-primary {
+    &:focus {
+      background-color: $btn-primary-bg;
+      border-color: $btn-primary-border;
+    }
+
+    &-loading {
+      &:not(:disabled):not(.disabled) {
+        &,
+        &:hover,
+        &:active,
+        &:focus:active {
+          background-color: $purple-300;
+          border-color: $purple-300;
+          cursor: default;
+        }
+      }
+    }
+
+    svg path {
+      fill: $white;
+    }
+  }
+
+  &-outline-primary {
+    border-color: $btn-outline-primary-border;
+
+    &-loading {
+      &:not(:disabled):not(.disabled) {
+        &,
+        &:hover,
+        &:focus,
+        &:active,
+        &:focus:active {
+          border-color: $purple-300;
+          color: $purple-300;
+          background-color: $white;
+          cursor: default;
+        }
+
+        .loader {
+          .prong {
+            .inner {
+              background-color: $purple-300;
+            }
+          }
+        }
+      }
+    }
+
+    svg path {
+      fill: $primary;
+      position: absolute;
+    }
+  }
+
+  &-secondary {
+    &:not(:disabled):not(.disabled):not(.btn-secondary-loading) {
+      background-color: $btn-secondary-bg;
+      border-color: $btn-secondary-border;
+      color: $btn-secondary-color;
+
+      &:hover {
+        background-color: $btn-secondary-hover-bg;
+        border-color: $btn-secondary-hover-border;
+        color: $btn-secondary-hover-color;
+      }
+
+      &:active {
+        background-color: $btn-secondary-active-bg;
+        border-color: $btn-secondary-active-border;
+        color: $btn-secondary-active-color;
+      }
+
+      &,
+      &:hover,
+      &:focus,
+      &:active,
+      &:focus:active {
+        svg path {
+          fill: $btn-secondary-color;
+        }
+      }
+    }
+  }
+
+  &-negative {
+    &:not(:disabled):not(.disabled):not(.btn-negative-loading) {
+      background-color: $btn-negative-bg;
+      border-color: $btn-negative-border;
+      color: $btn-negative-color;
+
+      &:hover {
+        background-color: $btn-negative-hover-bg;
+        border-color: $btn-negative-hover-border;
+        color: $btn-negative-hover-color;
+
+        svg path {
+          fill: $btn-negative-hover-color;
+        }
+      }
+
+      &:active {
+        background-color: $btn-negative-active-bg;
+        border-color: $btn-negative-active-border;
+        color: $btn-negative-active-color;
+
+        svg path {
+          fill: $btn-negative-active-color;
+        }
+      }
+    }
+    svg path {
+      fill: $danger;
+    }
+  }
+
+  &-negative-default {
+    &:not(:disabled):not(.disabled):not(.btn-negative-default-loading) {
+      background-color: $btn-negative-default-bg;
+      border-color: $btn-negative-default-border;
+      color: $btn-negative-default-color;
+
+      svg path {
+        fill: $btn-negative-default-color;
+      }
+
+      &:hover {
+        background-color: $btn-negative-default-hover-bg;
+        border-color: $btn-negative-default-hover-border;
+        color: $btn-negative-default-hover-color;
+
+        svg path {
+          fill: $btn-negative-default-hover-color;
+        }
+      }
+
+      &:active {
+        background-color: $btn-negative-default-active-bg;
+        border-color: $btn-negative-default-active-border;
+        color: $btn-negative-default-active-color;
+
+        svg path {
+          fill: $btn-negative-default-active-color;
+        }
+      }
+    }
+  }
+
+  &-speed-control {
+    &:not(:disabled):not(.disabled):not(.btn-social-loading) {
+      background-color: $btn-speed-control-bg;
+      border-color: $btn-speed-control-border;
+      color: $btn-speed-control-color;
+      font-weight: 400;
+
+      &:hover {
+        background-color: $btn-speed-control-hover-bg;
+        border-color: $btn-speed-control-hover-border;
+        color: $btn-speed-control-hover-color;
+      }
+
+      &:active,
+      &:active {
+        background-color: $btn-speed-control-active-bg;
+        border-color: $btn-speed-control-active-border;
+        color: $btn-speed-control-active-color;
+      }
+    }
+  }
+
+  &-social {
+    &:not(:disabled):not(.disabled):not(.btn-social-loading) {
+      background-color: $btn-social-bg;
+      border-color: $btn-social-border;
+      color: $btn-social-color;
+
+      &:hover {
+        background-color: $btn-social-hover-bg;
+        border-color: $btn-social-hover-border;
+        color: $btn-social-hover-color;
+      }
+
+      &:active,
+      &:active {
+        background-color: $btn-social-active-bg;
+        border-color: $btn-social-active-border;
+        color: $btn-social-active-color;
+      }
+    }
+
+    svg {
+      margin-top: 0;
+
+      &:first-child:not(:last-child) {
+        margin-right: 10px;
+        margin-left: 0;
+        float: none;
+      }
+    }
+
+    &.btn-lg svg {
+      height: 28px;
+      width: 28px;
+    }
+  }
+
+  &-dark,
+  &-outline-dark {
+    &:not(:disabled):not(.disabled):not(.btn-dark-loading):not(
+        .btn-outline-dark-loading
+      ) {
+      &:hover {
+        background-color: $btn-dark-hover-bg;
+        border-color: $btn-dark-hover-border;
+      }
+
+      &:active {
+        background-color: $btn-dark-active-bg;
+        border-color: $btn-dark-active-border;
+      }
+
+      &:hover,
+      &:active {
+        svg path {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+  &-dark {
+    background-color: $gray-700;
+
+    &:focus {
+      background-color: $btn-dark-bg;
+      border-color: $btn-dark-border;
+    }
+
+    &-loading {
+      &:not(:disabled):not(.disabled) {
+        &,
+        &:hover,
+        &:active,
+        &:focus:active {
+          background-color: $purple-300;
+          border-color: $purple-300;
+          cursor: default;
+        }
+      }
+    }
+
+    svg path {
+      fill: $white;
+    }
+  }
+
+  &-outline-dark {
+    border-color: $btn-outline-dark-border;
+
+    &-loading {
+      &:not(:disabled):not(.disabled) {
+        &,
+        &:hover,
+        &:focus,
+        &:active,
+        &:focus:active {
+          border-color: $gray-800;
+          color: $gray-800;
+          background-color: $white;
+          cursor: default;
+        }
+
+        .loader {
+          .prong {
+            .inner {
+              background-color: $gray-800;
+            }
+          }
+        }
+      }
+    }
+
+    svg path {
+      fill: $gray-800;
+    }
+  }
+
+  &-success {
+    &:not(:disabled):not(.disabled) {
+      color: $btn-success-color;
+
+      svg {
+        &:not(:first-child) {
+          margin-left: 8px;
+        }
+
+        path {
+          fill: $white;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        svg circle {
+          fill: #3bb94f;
+        }
+      }
+
+      &:active svg circle {
+        fill: #38af4b;
+      }
+
+      &.btn-sm svg:not(:first-child) {
+        margin-left: 6px;
+      }
+
+      &.btn-xs svg:not(:first-child) {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  &-paypal {
+    background-color: $paypal;
+  }
+
+  &.btn-text {
+    &-primary {
+      @extend .btn-outline-primary;
+      border-color: transparent;
+
+      &:not(:disabled):not(.disabled) {
+        svg path {
+          fill: $primary;
+        }
+
+        &:hover {
+          color: $purple-400 !important;
+          background-color: transparent !important;
+          border-color: transparent !important;
+          text-decoration: underline !important;
+
+          span {
+            text-decoration: underline !important;
+          }
+
+          svg path {
+            fill: $purple-400 !important;
+          }
+        }
+
+        &:active {
+          color: $purple-500 !important;
+          background-color: transparent !important;
+          border-color: transparent !important;
+
+          svg path {
+            fill: $purple-500 !important;
+          }
+        }
+
+        &:focus:active {
+          box-shadow: none;
+        }
+      }
+
+      &:disabled,
+      &.disabled {
+        border-color: transparent;
+        color: $btn-disabled-color;
+        pointer-events: none;
+      }
+    }
+
+    &-dark {
+      @extend .btn-outline-dark;
+      border-color: transparent;
+
+      &:not(:disabled):not(.disabled) {
+        svg path {
+          fill: $dark;
+        }
+
+        &:hover {
+          color: $gray-800 !important;
+          background-color: transparent !important;
+          border-color: transparent !important;
+          text-decoration: underline !important;
+
+          span {
+            text-decoration: underline !important;
+          }
+
+          svg path {
+            fill: $gray-800 !important;
+          }
+        }
+
+        &:active {
+          color: $gray-800 !important;
+          background-color: transparent !important;
+          border-color: transparent !important;
+
+          svg path {
+            fill: $gray-800 !important;
+          }
+        }
+
+        &:focus:active {
+          box-shadow: none;
+        }
+      }
+
+      &:disabled,
+      &.disabled {
+        border-color: transparent;
+        color: $btn-disabled-color;
+        pointer-events: none;
+      }
+    }
+
+    &-link {
+      @extend .btn-text-primary;
+      text-decoration: underline !important;
+
+      span {
+        text-decoration: underline !important;
+      }
+
+      &:disabled,
+      &.disabled {
+        color: $gray-500 !important;
+        background-color: transparent !important;
+        border-color: transparent !important;
+      }
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    opacity: 1;
+
+    svg path {
+      fill: $btn-disabled-color;
+    }
+  }
+
+  // Button States
+  &:not(.btn-text-primary):not(.btn-text-dark):disabled,
+  &:not(.btn-text-primary):not(.btn-text-dark).disabled {
+    background-color: $btn-disabled-bg;
+    border-color: $btn-disabled-border;
+    color: $btn-disabled-color;
+  }
+}
+
+.media-button {
+  border: none;
+  background: transparent;
+
+  * {
+    @include transition($transition-fast);
+  }
+
+  path {
+    fill: $btn-primary-bg;
+  }
+
+  &:not(:disabled):not(.disbled) {
+    &:hover {
+      path {
+        fill: $btn-primary-hover-border;
+      }
+    }
+
+    &:active {
+      path {
+        fill: $btn-primary-active-border;
+      }
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    path {
+      fill: $btn-disabled-color;
+    }
+  }
+}
+
+// TODO: to be removed
+.pagination {
+  @extend .d-flex;
+  @include no-select;
+  margin-bottom: 0;
+
+  a {
+    display: inline-block;
+    padding: 0 4px;
+    min-width: 40px;
+    height: 40px;
+    font-size: $btn-md-fz;
+    line-height: $btn-md-lh + 4px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: $btn-radius;
+    @include transition($transition-fast);
+    position: relative;
+    outline: none;
+
+    svg {
+      width: 16px;
+      height: 16px;
+
+      path {
+        @include transition($transition-fast);
+      }
+    }
+  }
+
+  li {
+    margin-right: 4px;
+
+    &.previous,
+    &.next {
+      a {
+        line-height: $btn-md-lh + 2px;
+      }
+    }
+
+    &.active a {
+      background-color: transparentize($primary, 0.9);
+      z-index: 1;
+
+      &,
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    &:not(.active) a {
+      &:hover {
+        color: $primary;
+        background-color: transparentize($primary, 0.9);
+        z-index: 1;
+
+        svg path {
+          fill: $primary;
+        }
+      }
+    }
+  }
+}
+
+.nav-button {
+  height: 48px;
+  border-radius: $radius * 2;
+  padding: $spacer * 6;
+  color: $gray-700;
+  text-decoration: none;
+  font-size: $text-sm-fz;
+  line-height: $text-sm-lh;
+  font-weight: 500;
+  @include transition($transition-fast);
+  @extend .d-flex;
+  @extend .align-items-center;
+  @extend .justify-content-between;
+  @extend .cursor-pointer;
+  @extend .no-select;
+
+  svg {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    margin-right: $spacer * 8;
+
+    path {
+      fill: $gray-600;
+      @include transition($transition-fast);
+    }
+  }
+
+  &:not(.nav-external) {
+    &:hover,
+    &.active {
+      color: $gray-700;
+      background-color: $gray-400;
+      text-decoration: none;
+
+      svg path {
+        fill: $gray-700;
+      }
+    }
+
+    &.active {
+      font-weight: $h9-fw;
+    }
+  }
+
+  &.nav-external {
+    color: $gray-600;
+
+    &:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+}
+
+.switch-buttons {
+  padding: 8px;
+  background-color: $gray-300;
+  border-radius: 30px;
+
+  .switch-button {
+    color: $gray-700;
+    padding: 10px 24px;
+    border-radius: $radius * 8;
+    border: none;
+    background-color: transparent;
+    color: $gray-500;
+    font-size: $text-md-fz;
+    line-height: $text-md-lh;
+    white-space: nowrap;
+    @extend .d-inline-flex;
+    @extend .align-items-center;
+
+    svg.icon path {
+      fill: $gray-500;
+    }
+
+    &__active {
+      color: $gray-700;
+      background-color: $white;
+      @extend .fw-bold;
+      @extend .shadow-2;
+
+      svg.icon path {
+        fill: $gray-700;
+      }
+    }
+
+    &:not(.switch-button__active):not(:disabled):hover {
+      background-color: $white;
+    }
+
+    &:not(:last-child) {
+      margin-right: $spacer * 4;
+    }
+  }
+
+  &-sm {
+    padding: 4px;
+    background-color: $gray-400;
+    border-radius: 20px;
+
+    .switch-button {
+      font-size: $text-sm-fz;
+      line-height: $text-sm-lh;
+      padding: 6px 12px;
+
+      &:not(.switch-button__active):not(:disabled):hover {
+        background-color: $gray-300;
+      }
+
+      &:not(:last-child) {
+        margin-right: $spacer;
+      }
+    }
+  }
+}
+
+.btn-sidebar-copy-button {
+  @extend .d-inline-flex;
+  @extend .align-items-center;
+  padding: 6px 6px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: $gray-600;
+  cursor: pointer;
+  @include transition($transition-normal);
+
+  .copy-btn-text {
+    color: $purple;
+    max-width: 0;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: hidden;
+    opacity: 0;
+    @include transition($transition-normal);
+  }
+
+  .btn-icon {
+    width: 18px;
+    height: 18px;
+    margin: 0 1px !important;
+    @include transition($transition-normal);
+
+    path {
+      fill: $white;
+    }
+  }
+
+  &:hover {
+    background: $white;
+    padding: 6px 6px;
+    .copy-btn-text {
+      opacity: 1;
+      max-width: 100px;
+      margin-left: 6px;
+    }
+
+    .btn-icon {
+      margin-left: 8px !important;
+
+      path {
+        fill: $purple;
+      }
+    }
+  }
+}
+.btn-sidebar-copy-button-success {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20.7px;
+  border-radius: 30px;
+  background-color: #fff;
+  outline: none;
+  &,
+  &:hover,
+  &:focus,
+  &:active,
+  &:focus:active {
+    border: none;
+    outline: none;
+  }
+}
+.plan-intervals {
+  @extend .d-flex;
+  background-color: $gray-300;
+  border-radius: 20px;
+  padding: 5px;
+
+  button {
+    @extend .d-inline-flex;
+    @extend .flex-column;
+    @extend .align-items-center;
+    @extend .justify-content-center;
+    background-color: transparent;
+    border-radius: 16px;
+    padding: 4px 24px;
+    border: none;
+    @include transition(background-color $transition-fast);
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+
+    &:not(.active):hover {
+      background-color: $gray-200;
+    }
+
+    &,
+    &:hover {
+      background-color: transparent;
+    }
+
+    .title {
+      @extend .h8;
+      @extend .text-secondary;
+      @extend .text-nowrap;
+      @extend .fw-medium;
+      margin-bottom: 0;
+    }
+
+    .caption {
+      @extend .text-xs;
+      @extend .text-success;
+      @extend .fw-medium;
+    }
+
+    &.active {
+      background-color: $white;
+
+      .title {
+        @extend .text-color-gray-700;
+        @extend .fw-bold;
+      }
+    }
+  }
+}

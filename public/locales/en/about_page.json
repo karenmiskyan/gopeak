@@ -1,0 +1,101 @@
+{
+  "title": "About Us",
+  "meta_desc": "We're a dedicated link building agency, expertly crafting backlinks to elevate website rankings on Google SERP. Meet our experienced team of Link Builders.",
+  "meta_title": "GoPeak | About Us & Our Link Building Team",
+  "who_we_are": {
+    "heading": "Who We Are",
+    "paragraphs": [
+      "Welcome to our world of Digital PR excellence! At our core, we are a team of devoted SEO experts who cultivate authoritative backlinks in authoritative websites.",
+      "Through our distinctive approach to link-building, our clients consistently witness remarkable enhancements in SEO performance within just a few months. We take pride in being the driving force behind great brands securing top positions on Search Engine Results Pages (SERPs).",
+      "Are you ready to claim the coveted #1 spot on Google? Let's collaborate and transform your SEO landscape together!"
+    ]
+  },
+  "our_mission_and_vision": {
+    "title_1": "Our Mission",
+    "content_1": "We aim to help all companies and startups grow with professional link-building services. We provide the opportunity to increase online visibility and allow all the companies to become famous in the market. We have great strategies to grow your website visibility from A to Z if you have a great idea. Secure your spot on the first page of Google SERP.",
+    "title_2": "Our Vision",
+    "content_2": "We have the vision to develop a white hat link-building culture in the market and provide our clients with indicators of how they should choose their link-building strategies. \nWe believe in successful partnerships and strive to create a big community where different companies can cooperate and gain visibility. We make a community where all companies are competitive and well-known."
+  },
+  "what_makes_us_better": {
+    "title": "What Makes Us Better in Competition",
+    "items": [
+      {
+        "title": "Our Strategy",
+        "content": "We use the most effective link-building strategies, broken link-building, ABC link exchanges, and guest posts. After the website audit, we offer a link-building strategy and start providing links."
+      },
+      {
+        "title": "Our Approach",
+        "content": "With AI's help, we have the advantage of developing new partnerships faster, which helps us create high-quality and relevant links."
+      },
+      {
+        "title": "Our Flexibility",
+        "content": "We are super flexible in our cooperation with clients and always open to discussions, comments, and feedback."
+      },
+      {
+        "title": "Our Pricing",
+        "content": "We have competitive pricing strategies, as we provide the highest quality links in an adequate pricing strategy."
+      }
+    ]
+  },
+  "co_founder_story": {
+    "title": "Co-founders Story",
+    "subtitle": "About Us",
+    "image_sub_text": "Co-founders of GoPeak Armen Tevikyan and Dmitri Sahakyan",
+    "co_founders_text": "“You have come to the right place if you want flexibility, clear communication, and high-quality backlinks. We have an individual approach with all our clients and prefer quality over quantity. We provide you with the best SEO backlinks and ensure that your website will rank on Google”.",
+    "about_co_founders": [
+      "Armen Tevikyan and Dmitri Sahakyan are the founders of the GoPeak agency. They started their careers in link building as freelancers and have been working with many websites.",
+      "They provide value with all the links and value-successful cooperation with clients. They think <span class='highlight-text'>“the best client is a happy client”</span> and strive to provide the best quality links for each niche.",
+      "The agency's experts are ready to do an audit for your website and help you start your website's link-building journey"
+    ]
+  },
+  "meet_our_team": {
+    "title": "Meet Our Team",
+    "team_members_info": [
+      {
+        "name": "Armen",
+        "position": "Co-Founder & CEO",
+        "in": "https://www.linkedin.com/in/armen-tevikyan/",
+        "image": "/assets/images/icons/GoPeakTeam/2.webp",
+        "mobileImage": "/assets/images/icons/GoPeakTeam/2.webp"
+      },
+      {
+        "name": "Dima",
+        "position": "Co-Founder",
+        "in": "https://www.linkedin.com/in/dmitri-sahakyan-b20a4b205/",
+        "image": "/assets/images/icons/GoPeakTeam/1.webp",
+        "mobileImage": "/assets/images/icons/GoPeakTeam/1.webp"
+      },
+      {
+        "name": "Haykuhi",
+        "position": "Link Building Manager",
+        "in": "https://www.linkedin.com/in/haykuhikhodjabaghyan/",
+        "image": "/assets/images/icons/GoPeakTeam/3.webp",
+        "mobileImage": "/assets/images/icons/GoPeakTeam/3.webp"
+      },
+      {
+        "name": "Anahit",
+        "position": "Head of Content",
+        "in": "https://www.linkedin.com/in/anahit-babkenyan-a2023a176/",
+        "image": "/assets/images/icons/GoPeakTeam/4.webp",
+        "mobileImage": "/assets/images/icons/GoPeakTeam/4.webp"
+      },
+      {
+        "name": "Mariam",
+        "position": "Link Building Specialist",
+        "in": "https://www.linkedin.com/in/mariam-mirzoyan-66b294207/",
+        "image": "/assets/images/icons/GoPeakTeam/5.webp",
+        "mobileImage": "/assets/images/icons/GoPeakTeam/5.webp"
+      },
+      {
+        "name": "Ani",
+        "position": "Link Building Specialist",
+        "in": "https://www.linkedin.com/in/ani-petrosyan-381709197/",
+        "image": "/assets/images/icons/GoPeakTeam/6.webp",
+        "mobileImage": "/assets/images/icons/GoPeakTeam/6.webp"
+      }
+    ]
+  },
+  "bottom_part": {
+    "heading": "Ready to Collaborate with GoPeak Team?"
+  }
+}
