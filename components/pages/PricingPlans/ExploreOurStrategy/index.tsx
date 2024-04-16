@@ -239,13 +239,13 @@ const ExploreOurStrategy = () => {
                         <div className="type-div">
                             <Image height="394" width="580" src={Type} loading="lazy" alt="type"/>
 
-                            <Typewriter
-                                options={{
-                                    strings: ['Your Keyword'],
-                                    autoStart: true,
-                                    loop: true,
-                                }}
-                            />
+                                <Typewriter
+                                    options={{
+                                        strings: ['Your Keyword'],
+                                        autoStart: true,
+                                        loop: true,
+                                    }}
+                                />
                         </div>
 
                     </div>

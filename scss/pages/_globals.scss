@@ -1,0 +1,36 @@
+#gopeak-header {
+  height: 87.25px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background: $white;
+
+  .navbar-expand-sm + .bg-light {
+    background: $white;
+    margin-top: 19px;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+
+  .mobile-menu {
+    padding: 6px 12px;
+    visibility: hidden;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 500ms ease-out, visibility 400ms ease-out;
+
+  }
+
+  .mobile-menu.show {
+    visibility: visible;
+    max-height: 500px;
+
+  }
+}
+
+
+#gopeak {
+  margin-top: 87.25px;
+}

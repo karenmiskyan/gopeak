@@ -1,0 +1,15 @@
+.booking-demo-wrapper {
+  background-image: linear-gradient(to right, #FCFCFF, #F4F5FF,#FBF8FD, #FAF3EB);
+}
+
+.booking-demo-wrapper .calendly-inline-widget iframe {
+  min-height: 900px;
+  height: max-content;
+}
+
+@media only screen and (max-width: 1204px) {
+  .booking-demo-wrapper .calendly-inline-widget iframe {
+    min-height: 1500px;
+    height: max-content;
+  }
+}
