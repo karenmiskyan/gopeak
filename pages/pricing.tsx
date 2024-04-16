@@ -38,18 +38,18 @@ const PlansAndPricing = () => {
     }) as IDialogFAQ[];
 
 
-    useEffect(() => {
-        // Load Clutch widget script
-        const script = document.createElement("script");
-        script.src = "https://widget.clutch.co/static/js/widget.js";
-        script.async = true;
-        document.body.appendChild(script);
-
-        // Cleanup function to remove script on component unmount
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
+    // useEffect(() => {
+    //     // Load Clutch widget script
+    //     const script = document.createElement("script");
+    //     script.src = "https://widget.clutch.co/static/js/widget.js";
+    //     script.async = true;
+    //     document.body.appendChild(script);
+    //
+    //     // Cleanup function to remove script on component unmount
+    //     return () => {
+    //         document.body.removeChild(script);
+    //     };
+    // }, []);
 
 
     const title = t("title");

@@ -101,7 +101,7 @@ const ExploreOurStrategy = () => {
     return (
         <>
             <section
-                className="prices-explor-strategy col-11 pt-sm-32 pt-20 px-sm-43 px-4 pb-sm-50 pb-20 m-auto rounded-4 mb-sm-18 mb-8 basic-container">
+                className="prices-explor-strategy col-11 pt-sm-32 pt-20 px-sm-43 px-4 pb-0 m-auto rounded-4 mb-sm-18 mb-8 basic-container">
                 <div className="d-flex flex-column align-items-center text-center pb-sm-22  pb-8">
                     <h2 className="explore-our-strategy-heading col-11 mb-4 h3">What You Can Expect?</h2>
                     <p className="col-md-8 col-11 text-sm fw-400 ">You must know that we prioritize quality then
@@ -195,8 +195,8 @@ const ExploreOurStrategy = () => {
                 </div>
             </section>
             <section
-                className="prices-explor-strategy col-11 pt-sm-32 pt-20 px-sm-43 px-4 pb-sm-50 pb-0 m-auto rounded-4 mb-sm-18 mb-0 basic-container">
-                <div className="d-flex flex-column align-items-center text-center pb-sm-22  pb-8">
+                className="prices-explor-strategy col-11 pt-sm-32 pt-20 px-sm-43 px-4 pb-0 m-auto rounded-4 mb-sm-18 mb-0 basic-container">
+                <div className="d-flex flex-column align-items-center text-center pb-sm-0  pb-8">
                     <h2 className="explore-our-strategy-heading col-11 mb-4 h3">What We Can Do?</h2>
                     <p className="col-md-8 col-11 text-sm fw-400 ">Search your ranking keyword and appear on the first
                         page of Google SERP</p>
@@ -252,26 +252,26 @@ const ExploreOurStrategy = () => {
                 </div>
             </section>
             <section
-                className="prices-explor-strategy col-11 pt-sm-32 pt-20 px-sm-43 px-4 pb-sm-50 pb-0 m-auto rounded-4 mb-sm-18 mb-8 basic-container">
+                className="prices-explor-strategy col-11 pt-0 px-sm-43 px-4 pb-0 m-auto rounded-4 mb-sm-18 mb-8 basic-container">
                 <div className="d-flex flex-column align-items-center text-center pb-sm-22  pb-8">
                     <h2 className="explore-our-strategy-heading col-11 mb-4 h3">Link Building Case Studies</h2>
                     <p className="col-md-8 col-11 text-sm fw-400 link-building-p">{`Be as successful as our clients. With
                         GoPeak's backlinks, you will search for your keyword and find it at the top of Google SERP.`}</p>
-                    <div className="star-div">
-                        {/*<StarLogo/>*/}
-                        {/*<div>*/}
-                        {/*    <Star/>*/}
-                        {/*    <Star/>*/}
-                        {/*    <Star/>*/}
-                        {/*    <Star/>*/}
-                        {/*    <Star/>*/}
-                        {/*</div>*/}
-                        {/*<span>10 reviews</span>*/}
+                    {/*<div className="star-div">*/}
+                    {/*    /!*<StarLogo/>*!/*/}
+                    {/*    /!*<div>*!/*/}
+                    {/*    /!*    <Star/>*!/*/}
+                    {/*    /!*    <Star/>*!/*/}
+                    {/*    /!*    <Star/>*!/*/}
+                    {/*    /!*    <Star/>*!/*/}
+                    {/*    /!*    <Star/>*!/*/}
+                    {/*    /!*</div>*!/*/}
+                    {/*    /!*<span>10 reviews</span>*!/*/}
 
-                        <div className="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="1"
-                             data-height="40" data-nofollow="true" data-expandifr="true" data-scale="100"
-                             data-clutchcompany-id="2292200"></div>
-                    </div>
+                    {/*    <div className="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="1"*/}
+                    {/*         data-height="40" data-nofollow="true" data-expandifr="true" data-scale="100"*/}
+                    {/*         data-clutchcompany-id="2292200"></div>*/}
+                    {/*</div>*/}
                 </div>
                 <div className="row justify-content-around ">
 
@@ -314,7 +314,7 @@ const ExploreOurStrategy = () => {
                 </div>
             </section>
             <section
-                className=" notable-section prices-explor-strategy col-11 pt-sm-32 pt-20 px-sm-43 px-4 pb-sm-50 pb-20 m-auto rounded-4 mb-sm-18 mb-8 basic-container">
+                className=" notable-section prices-explor-strategy col-11 pt-sm-32 pt-20 px-sm-43 px-4 pb-sm-30 pb-20 m-auto rounded-4 mb-sm-18 mb-8 basic-container">
                 <div className="d-flex flex-column align-items-center text-center pb-sm-22  pb-8">
                     <h2 className="explore-our-strategy-heading col-11 mb-4 h3">Notable Metric Changes</h2>
 
