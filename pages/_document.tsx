@@ -8,10 +8,15 @@ export default function Document() {
             <body>
             <Main />
             <NextScript />
-            <noscript>
-                <a href="https://www.livechat.com/chat-with/18426246/" rel="nofollow">Chat with us</a>, powered by
-                <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
-            </noscript>
+            {/* Using dangerouslySetInnerHTML to ensure noscript renders before script */}
+            <noscript
+                dangerouslySetInnerHTML={{
+                    __html: `
+              <a href="https://www.livechat.com/chat-with/18426246/" rel="nofollow">Chat with us</a>, powered by
+              <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+            `,
+                }}
+            />
             <Script id="livechat-script" strategy="afterInteractive">
                 {`
           window._lc = window._lc || {};
