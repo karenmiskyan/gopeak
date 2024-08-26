@@ -8,6 +8,10 @@ export default function Document() {
             <body>
             <Main />
             <NextScript />
+            <noscript>
+                <a href="https://www.livechat.com/chat-with/18426246/" rel="nofollow">Chat with us</a>, powered by
+                <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+            </noscript>
             <Script id="livechat-script" strategy="afterInteractive">
                 {`
           window._lc = window._lc || {};
@@ -34,10 +38,6 @@ export default function Document() {
           }(window,document,[].slice))
         `}
             </Script>
-            <noscript>
-                <a href="https://www.livechat.com/chat-with/18426246/" rel="nofollow">Chat with us</a>, powered by
-                <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
-            </noscript>
             </body>
         </Html>
     )
