@@ -1,10 +1,12 @@
 import {IconGoPeakSMBlack} from "../../../shared/icons/common-icons";
 import Link from "next/link";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import useResizer from "hooks/useResizer";
 import {TFunction} from "next-i18next";
 import Loading from "../Loading";
 import {useRouter} from "next/router";
+import BookCallModal from "../BookCallModal";
+import Cookies from "js-cookie";
 
 interface HeaderProps {
     t: TFunction;
@@ -12,10 +14,18 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({t, border}) => {
+    const [showModal, setShowModal] = useState(false);
     const [showNav, setShowNav] = useState(false);
     const [hideGetStarted, setHideGetStarted] = useState(false);
     const [loading, setLoading] = useState(false);
     const router = useRouter();
+
+    useEffect(() => {   
+        if(!Cookies.get('book_modal')) {
+            setShowModal(true);
+            Cookies.set('book_modal', 'modal showed', );
+        }
+    }, [])
 
     const handleNavToggle = () => {
         setShowNav((prevShowNav) => !prevShowNav);
@@ -34,8 +44,17 @@ const Header: React.FC<HeaderProps> = ({t, border}) => {
 
     // useResizer(handleWindowResize);
 
+    const handleCloseModal = () => {
+        setShowModal(false)
+    }
+
     return (
         <header id="gopeak-header" className={border ? 'bordered' : ''}>
+            {
+                showModal && <BookCallModal 
+                    handleCloseModal={handleCloseModal}
+                />
+            }
             <div className="header py-9 basic-container-lg">
                 {(loading && router.asPath !== '/blog') && (<Loading/>)}
                 <nav className="navbar navbar-expand-sm navbar-light bg-light">

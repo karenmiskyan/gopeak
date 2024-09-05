@@ -6,7 +6,7 @@ const Loading: React.FC<{}> = () => {
   return (
     <div className='overlay-loading'>
     <div className='loading-container' style={{maxWidth: '200px', 'margin': '0 auto'}}>
-      <Lottie animationData={loadingAnimation} height={200} width={200} loop={true}/>
+      {/* <Lottie animationData={loadingAnimation} height={200} width={200} loop={true}/> */}
     </div>
     </div>
   )
