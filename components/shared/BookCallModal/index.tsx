@@ -32,6 +32,7 @@ const BookCallModal:FC<{handleCloseModal: () => void}> = ({handleCloseModal}) =>
                   Get Ahead of Your Competitors with Our Link Building Services. Book Now and Enjoy a 20% Discount on Each Link for the First Month!
                 </p>
                 <button onClick={handleNavigateToBookCall}>Book a Call</button>
+                <button className='clancel_btn' onClick={handleCloseModal}>Cancel</button>
             </div>
         </div>
     </div>
