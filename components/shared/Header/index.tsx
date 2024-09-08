@@ -22,8 +22,9 @@ const Header: React.FC<HeaderProps> = ({t, border}) => {
 
     useEffect(() => {   
         if(!Cookies.get('book_modal')) {
-            setShowModal(true);
-            Cookies.set('book_modal', 'modal showed', );
+            setTimeout(() => {
+                setShowModal(true);
+            }, 2000)
         }
     }, [])
 
@@ -45,7 +46,8 @@ const Header: React.FC<HeaderProps> = ({t, border}) => {
     // useResizer(handleWindowResize);
 
     const handleCloseModal = () => {
-        setShowModal(false)
+        setShowModal(false);
+        Cookies.set('book_modal', 'modal showed');
     }
 
     return (

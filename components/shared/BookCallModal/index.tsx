@@ -2,12 +2,14 @@ import robotGif from 'shared/gif/gopeak__robot.gif';
 import Image from 'next/image';
 import { FC } from 'react';
 import { useRouter } from 'next/router';
+import Cookies from "js-cookie";
 
 const BookCallModal:FC<{handleCloseModal: () => void}> = ({handleCloseModal}) => {
   const router = useRouter();
 
   const handleNavigateToBookCall = () => {
-    router.push('https://www.gopeak.io/booking')
+    router.push('https://www.gopeak.io/booking');
+    Cookies.set('book_modal', 'modal showed');
   };
 
   return (
