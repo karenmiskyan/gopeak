@@ -31,7 +31,8 @@ const BookCallModal:FC<{handleCloseModal: () => void}> = ({handleCloseModal}) =>
             </div>
             <div className="modal__bottom__wrapper">
                 <p>
-                  Get Ahead of Your Competitors with Our Link Building Services. Book Now and Enjoy a 20% Discount on Each Link for the First Month!
+                    Get Ahead of Your Competitors with Our Link Building Services. Book Now and Enjoy a <b
+                    style={{color: 'black'}}>20% Discount</b> on Each Link for the First Month!
                 </p>
                 <button onClick={handleNavigateToBookCall}>Book a Call</button>
                 <button className='clancel_btn' onClick={handleCloseModal}>Cancel</button>
